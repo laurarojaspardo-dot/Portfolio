@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flammy Jim — Laura Rojas Pardo</title>
+<meta name="description" content="Flammy Jim: un endless flyer personalizado inspirado en Flappy Bird.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">LAURA<span>.ROJAS</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="../index.html#sobre-mi" data-i18n="nav.sobre">Sobre mí</a></li>
+      <li><a href="../index.html#portafolio" data-i18n="nav.portafolio">Portafolio</a></li>
+      <li><a href="../index.html#cv" data-i18n="nav.cv">CV</a></li>
+      <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="pheader">
+    <div class="wrap">
+      <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+      <div class="pheader__stamps">
+        <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
+        <span class="stamp stamp--done" data-i18n="fj.stamp.status">Jugable</span>
+      </div>
+      <h1 class="pheader__title">Flammy Jim</h1>
+      <p class="pheader__lede" data-i18n="fj.lede">Un endless flyer propio, construido sobre la base de Flappy Bird, con identidad visual personalizada y una mecánica adicional que cambia su ritmo.</p>
+
+      <div class="infobar">
+        <div class="infobar__item"><h4 data-i18n="common.infobar.type">Tipo</h4><p data-i18n="fj.info.type">Proyecto personal</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="fj.info.status">Jugable</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="fj.info.role">Diseño, arte y programación</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.genre">Género</h4><p>Endless flyer</p></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.desc">Descripción</h2>
+        <p data-i18n="fj.desc.p1">Flammy Jim toma la fórmula reconocible de Flappy Bird —esquivar obstáculos manteniendo el vuelo con un solo input— y la reconstruye con arte propio y una mecánica adicional que altera el ritmo habitual del género. El objetivo era practicar el ciclo completo de un proyecto pequeño y personal: diseño, arte y programación, de principio a fin, sin depender de un equipo.</p>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
+        <ol class="process-list">
+          <li data-n="01"><strong data-i18n="fj.process.1.title">Punto de partida</strong><span data-i18n="fj.process.1.body">Elegí un clásico simple e ineludible como base para poder enfocarme en la ejecución más que en inventar un sistema desde cero.</span></li>
+          <li data-n="02"><strong data-i18n="fj.process.2.title">Identidad propia</strong><span data-i18n="fj.process.2.body">Rediseñé por completo la parte visual: personaje, fondo y paleta, alejándome de la referencia original.</span></li>
+          <li data-n="03"><strong data-i18n="fj.process.3.title">Una mecánica, un cambio de ritmo</strong><span data-i18n="fj.process.3.body">Incorporé una mecánica adicional pensada específicamente para romper la monotonía del loop original de "esquivar y esquivar".</span></li>
+        </ol>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.tools">Herramientas</h2>
+        <div class="tag-row">
+          <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Pixel Art</span>
+        </div>
+        <h2 style="margin-top:36px;" data-i18n="common.section.skills">Habilidades demostradas</h2>
+        <div class="tag-row">
+          <span class="tag">Gameplay Programming</span><span class="tag">Game Design</span><span class="tag">Arte de personaje</span>
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.gallery">Galería</h2>
+        <div class="pgallery">
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.links">Enlaces</h2>
+        <div class="plinks">
+          <a href="https://kath-4.itch.io/" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
+          <a href="https://github.com/laurarojaspardo-dot" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.repo">Ver repositorio</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / Level Designer</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

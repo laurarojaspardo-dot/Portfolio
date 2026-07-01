@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tainted Palate — Laura Rojas Pardo</title>
+<meta name="description" content="Tainted Palate: juego de inspección y memoria desarrollado para un game jam sobre lo tóxico.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">LAURA<span>.ROJAS</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="../index.html#sobre-mi" data-i18n="nav.sobre">Sobre mí</a></li>
+      <li><a href="../index.html#portafolio" data-i18n="nav.portafolio">Portafolio</a></li>
+      <li><a href="../index.html#cv" data-i18n="nav.cv">CV</a></li>
+      <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="pheader">
+    <div class="wrap">
+      <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+      <div class="pheader__stamps">
+        <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
+        <span class="stamp stamp--wip" data-i18n="tp.stamp.status">En desarrollo</span>
+      </div>
+      <h1 class="pheader__title">Tainted Palate</h1>
+      <p class="pheader__lede" data-i18n="tp.lede">Un juego de inspección y memoria en primera persona sobre descubrir qué combinaciones —no ingredientes— convierten un plato en veneno.</p>
+
+      <div class="infobar">
+        <div class="infobar__item"><h4 data-i18n="common.infobar.year">Año</h4><p>2026</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="tp.info.status">En desarrollo (game jam)</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="tp.info.role">Diseño de niveles, narrativa y assets</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.duration">Duración</h4><p data-i18n="tp.info.duration">Ciclo de game jam</p></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.desc">Descripción</h2>
+        <p data-i18n="tp.desc.p1">Tainted Palate se desarrolló para un game jam con el tema "tóxico". En un mundo post-apocalíptico gobernado por una organización llamada El Consorcio, el jugador asume el rol de un catador forzado: alguien obligado a probar y clasificar comida antes de que llegue a manos de otros.</p>
+        <p data-i18n="tp.desc.p2">El problema de diseño central era evitar la solución obvia de "objetos buenos vs. objetos malos". En su lugar, la toxicidad surge de la combinación de ingredientes, no del ingrediente en sí mismo — lo que convierte cada plato en un pequeño rompecabezas de memoria y deducción en vez de una simple lista de prohibidos.</p>
+        <p data-i18n="tp.desc.p3">El público objetivo son jugadores de juegos de inspección y narrativa ambiental, interesados en mecánicas de puzzle contemplativas más que en reflejos o acción.</p>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
+        <ol class="process-list">
+          <li data-n="01"><strong data-i18n="tp.process.1.title">Interpretar el tema del jam</strong><span data-i18n="tp.process.1.body">Partimos de "tóxico" como tema y decidimos evitar la lectura literal (veneno como objeto) para explorar la toxicidad como propiedad emergente de una combinación — una decisión de diseño que definió todo el sistema de juego.</span></li>
+          <li data-n="02"><strong data-i18n="tp.process.2.title">Construir el mundo: El Consorcio</strong><span data-i18n="tp.process.2.body">Diseñamos el contexto narrativo de una organización opresiva que controla el suministro de alimentos, dando sentido a por qué el catador está atrapado en su rol y qué está realmente en juego si falla.</span></li>
+          <li data-n="03"><strong data-i18n="tp.process.3.title">Sistema de combinaciones</strong><span data-i18n="tp.process.3.body">Definimos las fichas de ingredientes y sus reglas de interacción, de forma que ninguna ficha sea "mala" por sí sola — la toxicidad depende exclusivamente de con qué se combina.</span></li>
+          <li data-n="04"><strong data-i18n="tp.process.4.title">Documentar en el GDD</strong><span data-i18n="tp.process.4.body">Mantuvimos un Game Design Document vivo (actualmente en v1.3) para sincronizar mecánicas, narrativa y arte entre el equipo a medida que el alcance del jam se ajustaba.</span></li>
+          <li data-n="05"><strong data-i18n="tp.process.5.title">Producción de assets</strong><span data-i18n="tp.process.5.body">Trabajé specs de sprites y prompts de generación de imágenes para mantener consistencia visual entre los platos, ingredientes y el entorno del juego.</span></li>
+        </ol>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="tp.challenges.title">Retos y aprendizajes</h2>
+        <p data-i18n="tp.challenges.p">El mayor reto fue balancear la complejidad del sistema de combinaciones para que se sintiera como un misterio resoluble y no como memorización arbitraria — es decir, diseño de puzzle real, no una lista disfrazada. También aprendí a mantener un GDD como documento vivo dentro de los tiempos ajustados de un jam, iterando la documentación al mismo ritmo que el prototipo.</p>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.tools">Herramientas</h2>
+        <div class="tag-row">
+          <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Pixel Art</span>
+          <span class="tag">Affinity Designer</span><span class="tag">Generación de imágenes (Gemini)</span>
+        </div>
+        <h2 style="margin-top:36px;" data-i18n="common.section.skills">Habilidades demostradas</h2>
+        <div class="tag-row">
+          <span class="tag">Narrative Design</span><span class="tag">Level / Puzzle Design</span>
+          <span class="tag">Documentación (GDD)</span><span class="tag">Trabajo en equipo</span>
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.gallery">Galería</h2>
+        <div class="pgallery">
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.links">Enlaces</h2>
+        <div class="plinks">
+          <a href="https://kath-4.itch.io/" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / Level Designer</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura Rojas Pardo — Game Developer &amp; Designer</title>
+<meta name="description" content="Portafolio de Laura Katherinne Rojas Pardo: Game Developer, Game Designer y Level Designer. Narrativa, diseño de niveles y desarrollo con Unity y C#.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="#inicio" class="nav__brand">LAURA<span>.ROJAS</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="#sobre-mi" data-i18n="nav.sobre">Sobre mí</a></li>
+      <li><a href="#portafolio" data-i18n="nav.portafolio">Portafolio</a></li>
+      <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
+      <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="inicio" class="hero">
+    <div class="hero__inner">
+      <div class="hero__grid">
+
+        <div class="hero__content">
+          <span class="hero__tag" data-i18n="idx.hero.tag">Ficha de perfil — activo</span>
+          <h1>Laura Katherinne<br>Rojas Pardo</h1>
+          <p class="hero__role">
+            <span class="sr-only">Game Developer / Game Designer / Level Designer</span>
+            <span class="typed-role" aria-hidden="true"><span id="typedRole"></span><span class="typed-cursor">|</span></span>
+          </p>
+          <p class="hero__desc" data-i18n="idx.hero.desc">Diseño y construyo experiencias jugables donde la narrativa y la mecánica se examinan mutuamente, como un plato bajo inspección. Actualmente en formación en Generation Colombia, moviendo mi trabajo en producción multimedia hacia el desarrollo de videojuegos.</p>
+
+          <div class="hero__socials">
+            <a class="social-btn" href="https://github.com/laurarojaspardo-dot" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            </a>
+            <a class="social-btn" href="https://www.linkedin.com/in/laura-katherinne-rojas-pardo" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="2.5" width="19" height="19" rx="2"/><path d="M7.5 10v7M7.5 7.2v.01M12 17v-4.2c0-1.4 1-2.3 2.2-2.3 1.2 0 2.3.9 2.3 2.3V17" stroke-linecap="round"/></svg>
+            </a>
+            <a class="social-btn" href="https://kath-4.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8.5 5 4h14l2 4.5c.2 1.5-.9 3-2.5 3-1 0-1.9-.6-2.3-1.4-.4.8-1.3 1.4-2.3 1.4s-1.9-.6-2.3-1.4c-.4.8-1.3 1.4-2.3 1.4s-1.9-.6-2.3-1.4c-.4.8-1.3 1.4-2.3 1.4C3.9 11.5 2.8 10 3 8.5Z"/><path d="M4.5 11.5 4 19c-.05.9.6 1.6 1.5 1.6.6 0 1-.3 1.3-.8l.9-1.6h8.6l.9 1.6c.3.5.7.8 1.3.8.9 0 1.55-.7 1.5-1.6l-.5-7.5" stroke-linecap="round"/><path d="M9.5 14.5v3M14.5 14.2c.6-.3 1.4-.3 2 0" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Spotlight: proyecto actual, con fecha y redirección -->
+        <a href="projects/tainted-palate.html" class="hero__spotlight" aria-label="Tainted Palate — ver proyecto actual">
+          <span class="stamp stamp--wip hero__spotlight__stamp" data-i18n="idx.card.tp.stamp">En desarrollo</span>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+          <div class="hero__spotlight__meta" data-i18n="idx.hero.spotlight.meta">2026 · En desarrollo</div>
+          <h3 class="hero__spotlight__title">Tainted Palate</h3>
+          <span class="hero__spotlight__cta"><span data-i18n="idx.hero.spotlight.cta">Ver proyecto actual</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+      </div>
+    </div>
+    <a href="#sobre-mi" class="hero__scroll" data-i18n="idx.hero.scroll">Desplázate</a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="sobre-mi" class="section">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="idx.about.eyebrow">FILE_01 — Sobre mí</span>
+        <h2 data-i18n="idx.about.title">De la producción multimedia al diseño de mundos jugables</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__bio reveal">
+          <p data-i18n="idx.about.p1">Soy Laura, productora multimedia en transición activa hacia el desarrollo de videojuegos. Actualmente curso el bootcamp de Game Development en Generation Colombia, donde estoy afinando las herramientas técnicas que ya intuía desde el diseño visual: composición, ritmo y cómo guiar la atención de alguien a través de un espacio.</p>
+          <p data-i18n="idx.about.p2">Me interesa particularmente el diseño narrativo y el diseño de niveles, sobre todo en juegos de plataformas: espacios donde cada obstáculo cuenta algo sobre el mundo que lo rodea. Mi proyecto actual, <em>Tainted Palate</em>, nace de esa intersección — un juego de inspección y memoria donde la toxicidad emerge de la combinación, no del ingrediente aislado.</p>
+          <p data-i18n="idx.about.p3">Vengo del pixel art, el branding y la ilustración digital, así que cuido tanto la lógica del sistema como la piel visual que lo comunica.</p>
+        </div>
+
+        <div class="about__stackcard reveal">
+          <h4 data-i18n="idx.about.dev">Desarrollo</h4>
+          <div class="tag-row">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <h4 data-i18n="idx.about.art">Arte &amp; Diseño</h4>
+          <div class="tag-row">
+            <span class="tag">Pixel Art</span>
+            <span class="tag">Affinity Designer</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Photoshop</span>
+          </div>
+          <h4 data-i18n="idx.about.focus">Enfoque</h4>
+          <div class="tag-row">
+            <span class="tag">Narrative Design</span>
+            <span class="tag">Level Design</span>
+            <span class="tag">Platformers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <section id="portafolio" class="section">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="idx.portfolio.eyebrow">FILE_02 — Portafolio</span>
+        <h2 data-i18n="idx.portfolio.title">Proyectos bajo inspección</h2>
+        <p data-i18n="idx.portfolio.desc">Una selección de trabajo en videojuegos y en diseño visual. Cada ficha lleva a un informe completo del proceso.</p>
+      </div>
+
+      <!-- Videojuegos -->
+      <div class="portfolio__group reveal">
+        <div class="portfolio__grouphead">
+          <h3 data-i18n="idx.portfolio.games.title">Videojuegos</h3>
+          <span data-i18n="idx.portfolio.games.count">02 proyectos</span>
+        </div>
+        <div class="card-grid">
+
+          <article class="pcard">
+            <div class="pcard__media">
+              <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+              <span class="stamp stamp--wip pcard__stamp" data-i18n="idx.card.tp.stamp">En desarrollo</span>
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta" data-i18n="idx.card.tp.meta">2026 · Game Jam "Tóxico"</div>
+              <h4 class="pcard__title">Tainted Palate</h4>
+              <p class="pcard__desc" data-i18n="idx.card.tp.desc">Juego de inspección y memoria en primera persona. Un catador forzado debe identificar qué combinaciones de ingredientes son tóxicas dentro de un mundo post-apocalíptico gobernado por El Consorcio.</p>
+              <div class="pcard__tools"><span>Unity</span><span>C#</span><span>Pixel Art</span></div>
+              <a href="projects/tainted-palate.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="pcard">
+            <div class="pcard__media">
+              <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+              <span class="stamp stamp--game pcard__stamp" data-i18n="idx.card.fj.stamp">Jugable</span>
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta" data-i18n="idx.card.fj.meta">Proyecto personal</div>
+              <h4 class="pcard__title">Flammy Jim</h4>
+              <p class="pcard__desc" data-i18n="idx.card.fj.desc">Un endless flyer estilo Flappy Bird reconstruido desde cero: identidad visual propia y una mecánica adicional que cambia el ritmo del clásico.</p>
+              <div class="pcard__tools"><span>Unity</span><span>C#</span></div>
+              <a href="projects/flammy-jim.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Diseño -->
+      <div class="portfolio__group reveal">
+        <div class="portfolio__grouphead">
+          <h3 data-i18n="idx.portfolio.design.title">Diseño</h3>
+          <span data-i18n="idx.portfolio.design.count">02 proyectos</span>
+        </div>
+        <div class="card-grid">
+
+          <article class="pcard">
+            <div class="pcard__media">
+              <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+              <span class="stamp stamp--design pcard__stamp" data-i18n="idx.card.epr.stamp">Diseño</span>
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta" data-i18n="idx.card.epr.meta">Proyecto universitario</div>
+              <h4 class="pcard__title">El precio de resistir</h4>
+              <p class="pcard__desc" data-i18n="idx.card.epr.desc">Proyecto de identidad visual y narrativa desarrollado en la universidad, explorando composición y mensaje a través del diseño gráfico.</p>
+              <div class="pcard__tools"><span>Illustrator</span><span>Photoshop</span></div>
+              <a href="projects/el-precio-de-resistir.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="pcard is-locked">
+            <div class="pcard__media">
+              <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+              <span class="stamp stamp--wip pcard__stamp" data-i18n="idx.card.notco.stamp">En camino</span>
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta" data-i18n="idx.card.notco.meta">SENA — Etapa productiva</div>
+              <h4 class="pcard__title">Sitio web NotCo</h4>
+              <p class="pcard__desc" data-i18n="idx.card.notco.desc">Sitio web diseñado y maquetado como parte de mi etapa productiva. Publicación en GitHub Pages en proceso.</p>
+              <div class="pcard__tools"><span>HTML</span><span>CSS</span></div>
+              <a href="projects/notco-web.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CV ===================== -->
+  <section id="cv" class="section">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="idx.cv.eyebrow">FILE_03 — CV</span>
+        <h2 data-i18n="idx.cv.title">Perfil profesional</h2>
+      </div>
+
+      <div class="cv__grid reveal">
+        <div class="cv__block">
+          <h4 data-i18n="idx.cv.resumen.title">Resumen</h4>
+          <p data-i18n="idx.cv.resumen.p">Productora multimedia en transición hacia el desarrollo de videojuegos, con enfoque en diseño narrativo y de niveles. Combino base técnica en programación con formación en diseño visual y comunicación.</p>
+
+          <h4 data-i18n="idx.cv.tech.title">Habilidades técnicas</h4>
+          <div class="tag-row">
+            <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Python</span>
+            <span class="tag">HTML/CSS</span><span class="tag">Pixel Art</span><span class="tag">Affinity Designer</span>
+            <span class="tag">Illustrator</span><span class="tag">Photoshop</span>
+          </div>
+
+          <h4 data-i18n="idx.cv.soft.title">Habilidades blandas</h4>
+          <ul class="cv__list">
+            <li data-i18n="idx.cv.soft.li1">Trabajo en equipo en entornos de desarrollo colaborativo (game jams)</li>
+            <li data-i18n="idx.cv.soft.li2">Comunicación técnica en inglés en contextos de IT</li>
+            <li data-i18n="idx.cv.soft.li3">Resolución de problemas y pensamiento de sistemas</li>
+          </ul>
+        </div>
+
+        <div class="cv__block">
+          <h4 data-i18n="idx.cv.edu.title">Formación</h4>
+          <div class="cv__entry">
+            <div class="cv__entry-head"><strong>Bootcamp en Game Development</strong><span data-i18n="idx.cv.edu.e1.status">En curso</span></div>
+            <p>Generation Colombia</p>
+          </div>
+          <div class="cv__entry">
+            <div class="cv__entry-head"><strong data-i18n="idx.cv.edu.e2.title">Técnico en Producción Multimedia</strong><span>SENA</span></div>
+            <p data-i18n="idx.cv.edu.e2.desc">Comunicación, diseño y desarrollo multimedia.</p>
+          </div>
+
+          <h4 style="margin-top:28px;" data-i18n="idx.cv.exp.title">Experiencia</h4>
+          <div class="cv__entry">
+            <div class="cv__entry-head"><strong data-i18n="idx.cv.exp.e1.title">Asistente de Comunicaciones</strong><span data-i18n="common.sena.intern">SENA — Etapa productiva</span></div>
+            <p data-i18n="idx.cv.exp.e1.desc">Apoyo en piezas de comunicación y diseño digital.</p>
+          </div>
+        </div>
+
+        <div class="cv__download">
+          <p data-i18n="idx.cv.download.p">El CV completo en PDF incluye el detalle de experiencia, certificaciones y referencias.</p>
+          <a href="assets/CV-Laura-Rojas-Pardo.pdf" class="btn" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="idx.cv.download.btn">Descargar CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto" class="contact">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="idx.contact.eyebrow">FILE_04 — Contacto</span>
+      <h2 data-i18n="idx.contact.title">¿Trabajamos en un jam, un juego, o algo entre ambos?</h2>
+      <p class="contact__desc" data-i18n="idx.contact.desc">Estoy abierta a colaboraciones, procesos de selección y proyectos de game jam. Escríbeme y te respondo pronto.</p>
+      <div class="contact__actions">
+        <a href="mailto:laura.rojaspardo@gmail.com" class="btn" data-i18n="idx.contact.btn.email">Escribir correo</a>
+        <a href="https://www.linkedin.com/in/laura-katherinne-rojas-pardo" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="idx.contact.btn.linkedin">Ver LinkedIn</a>
+      </div>
+
+      <div class="contact__links">
+        <span>laura.rojaspardo@gmail.com</span>
+        <a href="https://github.com/laurarojaspardo-dot" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://kath-4.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        <a href="https://www.linkedin.com/in/laura-katherinne-rojas-pardo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/i18n.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitio web NotCo — Laura Rojas Pardo</title>
+<meta name="description" content="Sitio web maquetado durante la etapa productiva del SENA.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">LAURA<span>.ROJAS</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="../index.html#sobre-mi" data-i18n="nav.sobre">Sobre mí</a></li>
+      <li><a href="../index.html#portafolio" data-i18n="nav.portafolio">Portafolio</a></li>
+      <li><a href="../index.html#cv" data-i18n="nav.cv">CV</a></li>
+      <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="pheader">
+    <div class="wrap">
+      <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+      <div class="pheader__stamps">
+        <span class="stamp stamp--design" data-i18n="common.stamp.design">Diseño</span>
+        <span class="stamp stamp--wip" data-i18n="notco.stamp.status">Publicación en camino</span>
+      </div>
+      <h1 class="pheader__title">Sitio web NotCo</h1>
+      <p class="pheader__lede" data-i18n="notco.lede">Sitio web diseñado y maquetado como parte de mi etapa productiva en el SENA. La publicación en vivo está en proceso.</p>
+
+      <div class="infobar">
+        <div class="infobar__item"><h4 data-i18n="common.infobar.type">Tipo</h4><p data-i18n="notco.info.type">Etapa productiva — SENA</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="notco.info.status">Por publicar en GitHub Pages</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="notco.info.role">Diseño y maquetación web</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.area">Área</h4><p data-i18n="notco.info.area">Diseño web</p></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.desc">Descripción</h2>
+        <p><em data-i18n="notco.desc.note">Nota: esta sección está en borrador. Cuéntame el objetivo del sitio y qué parte del proceso hiciste tú para completarla con precisión.</em></p>
+        <p data-i18n="notco.desc.p1">Sitio web desarrollado durante mi etapa productiva como Asistente de Comunicaciones en el SENA, enfocado en maquetación y diseño de interfaz.</p>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.tools">Herramientas</h2>
+        <div class="tag-row">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.gallery">Galería</h2>
+        <div class="pgallery">
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.links">Enlaces</h2>
+        <p><em data-i18n="notco.links.note">Este sitio aún no está publicado. Cuando lo subamos a GitHub Pages, el enlace en vivo aparecerá aquí.</em></p>
+        <div class="plinks">
+          <span class="stamp stamp--wip" data-i18n="notco.links.stamp">Enlace pendiente</span>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / Level Designer</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
