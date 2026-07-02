@@ -53,8 +53,8 @@ const translations = {
     en: 'I\'m Laura, a multimedia producer actively transitioning into game development. I\'m currently taking the Game Development bootcamp at Generation Colombia, sharpening technical tools I already sensed from visual design: composition, pacing, and how to guide someone\'s attention through a space.'
   },
   'idx.about.p2': {
-    es: 'Me interesa particularmente el diseño narrativo y el diseño de niveles, sobre todo en juegos de plataformas: espacios donde cada obstáculo cuenta algo sobre el mundo que lo rodea. Mi proyecto actual, Tainted Palate, nace de esa intersección — un juego de inspección y memoria donde la toxicidad emerge de la combinación, no del ingrediente aislado.',
-    en: 'I\'m particularly interested in narrative design and level design, especially in platformers: spaces where every obstacle says something about the world around it. My current project, Tainted Palate, comes from that intersection — an inspection and memory game where toxicity emerges from combination, not from any single ingredient.'
+    es: 'Me interesa particularmente el diseño narrativo y el diseño de niveles, sobre todo en juegos de plataformas: espacios donde cada obstáculo cuenta algo sobre el mundo que lo rodea. Mi proyecto actual, Toxic Delicacies, nace de esa intersección — un juego de inspección y memoria donde la toxicidad emerge de la combinación, no del ingrediente aislado.',
+    en: 'I\'m particularly interested in narrative design and level design, especially in platformers: spaces where every obstacle says something about the world around it. My current project, Toxic Delicacies, comes from that intersection — an inspection and memory game where toxicity emerges from combination, not from any single ingredient.'
   },
   'idx.about.p3': {
     es: 'Vengo del pixel art, el branding y la ilustración digital, así que cuido tanto la lógica del sistema como la piel visual que lo comunica.',
@@ -116,13 +116,13 @@ const translations = {
   'idx.contact.btn.email':    { es: 'Escribir correo', en: 'Send an email' },
   'idx.contact.btn.linkedin': { es: 'Ver LinkedIn', en: 'View LinkedIn' },
 
-  // ---------- TAINTED PALATE ----------
+  // ---------- Toxic Delicacies ----------
   'tp.stamp.status': { es: 'En desarrollo', en: 'In development' },
   'tp.lede': { es: 'Un juego de inspección y memoria en primera persona sobre descubrir qué combinaciones —no ingredientes— convierten un plato en veneno.', en: 'A first-person inspection and memory game about discovering which combinations — not ingredients — turn a dish into poison.' },
   'tp.info.status':   { es: 'En desarrollo (game jam)', en: 'In development (game jam)' },
   'tp.info.role':     { es: 'Diseño de niveles, narrativa y assets', en: 'Level design, narrative and assets' },
   'tp.info.duration': { es: 'Ciclo de game jam', en: 'Game jam cycle' },
-  'tp.desc.p1': { es: 'Tainted Palate se desarrolló para un game jam con el tema "tóxico". En un mundo post-apocalíptico gobernado por una organización llamada El Consorcio, el jugador asume el rol de un catador forzado: alguien obligado a probar y clasificar comida antes de que llegue a manos de otros.', en: 'Tainted Palate was developed for a game jam themed "toxic". In a post-apocalyptic world ruled by an organization called El Consorcio, the player takes on the role of a forced taster: someone required to test and classify food before it reaches anyone else.' },
+  'tp.desc.p1': { es: 'Toxic Delicacies se desarrolló para un game jam con el tema "tóxico". En un mundo post-apocalíptico gobernado por una organización llamada El Consorcio, el jugador asume el rol de un catador forzado: alguien obligado a probar y clasificar comida antes de que llegue a manos de otros.', en: 'Toxic Delicacies was developed for a game jam themed "toxic". In a post-apocalyptic world ruled by an organization called El Consorcio, the player takes on the role of a forced taster: someone required to test and classify food before it reaches anyone else.' },
   'tp.desc.p2': { es: 'El problema de diseño central era evitar la solución obvia de "objetos buenos vs. objetos malos". En su lugar, la toxicidad surge de la combinación de ingredientes, no del ingrediente en sí mismo — lo que convierte cada plato en un pequeño rompecabezas de memoria y deducción en vez de una simple lista de prohibidos.', en: 'The core design problem was avoiding the obvious "good items vs. bad items" solution. Instead, toxicity emerges from combining ingredients, not from any single ingredient — turning each dish into a small memory and deduction puzzle rather than a simple blacklist.' },
   'tp.desc.p3': { es: 'El público objetivo son jugadores de juegos de inspección y narrativa ambiental, interesados en mecánicas de puzzle contemplativas más que en reflejos o acción.', en: 'The target audience is players of inspection and environmental-narrative games, more interested in contemplative puzzle mechanics than in reflexes or action.' },
   'tp.process.1.title': { es: 'Interpretar el tema del jam', en: 'Interpreting the jam theme' },
