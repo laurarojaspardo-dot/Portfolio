@@ -42,12 +42,12 @@ const translations = {
     en: 'I design and build playable experiences where narrative and mechanics inspect each other, like a dish under examination. Currently training at Generation Colombia, moving my multimedia production background into game development.'
   },
   'idx.hero.scroll': { es: 'Desplázate', en: 'Scroll' },
-  'idx.hero.spotlight.meta':  { es: '2026 · En desarrollo', en: '2026 · In development' },
+  'idx.hero.spotlight.meta':  { es: '2026 · Finalizado', en: '2026 · Completed' },
   'idx.hero.spotlight.cta':   { es: 'Ver proyecto actual', en: 'See current project' },
 
   // ---------- INDEX — About ----------
   'idx.about.eyebrow': { es: 'FILE_01 — Sobre mí', en: 'FILE_01 — About me' },
-  'idx.about.title':   { es: 'De la producción multimedia al diseño de mundos jugables', en: 'From multimedia production to designing playable worlds' },
+  'idx.about.title':   { es: 'El camino de la producción de multimedia al diseño de mundos jugables', en: 'From multimedia production to designing playable worlds' },
   'idx.about.p1': {
     es: 'Soy Laura, productora multimedia en transición activa hacia el desarrollo de videojuegos. Actualmente curso el bootcamp de Game Development en Generation Colombia, donde estoy afinando las herramientas técnicas que ya intuía desde el diseño visual: composición, ritmo y cómo guiar la atención de alguien a través de un espacio.',
     en: 'I\'m Laura, a multimedia producer actively transitioning into game development. I\'m currently taking the Game Development bootcamp at Generation Colombia, sharpening technical tools I already sensed from visual design: composition, pacing, and how to guide someone\'s attention through a space.'
