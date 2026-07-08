@@ -6,6 +6,15 @@
 <title>Laura Rojas Pardo — Game Developer &amp; Designer</title>
 <meta name="description" content="Portafolio de Laura Katherinne Rojas Pardo: Game Developer, Game Designer y Level Designer. Narrativa, diseño de niveles y desarrollo con Unity y C#.">
 <link rel="stylesheet" href="css/styles.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('laura-portfolio-theme');
+    if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 
@@ -20,6 +29,10 @@
       <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.theme.toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
       <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
         <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
       </button>
@@ -44,7 +57,7 @@
             <span class="sr-only">Game Developer / Game Designer / Level Designer</span>
             <span class="typed-role" aria-hidden="true"><span id="typedRole"></span><span class="typed-cursor">|</span></span>
           </p>
-          <p class="hero__desc" data-i18n="idx.hero.desc">Diseño y construyo experiencias jugables donde la narrativa y la mecánica se examinan mutuamente, como un plato bajo inspección. Actualmente en formación en Generation Colombia, moviendo mi trabajo en producción multimedia hacia el desarrollo de videojuegos.</p>
+          <p class="hero__desc" data-i18n="idx.hero.desc">Diseño y desarrollo experiencias jugables donde la narrativa y la mecánica se ponen a prueba mutuamente. Formándome como Unity Developer con Generation Colombia, con foco en diseño narrativo, diseño de niveles y sistemas de juego.</p>
 
           <div class="hero__socials">
             <a class="social-btn" href="https://github.com/laurarojaspardo-dot" target="_blank" rel="noopener" aria-label="GitHub">
@@ -61,7 +74,7 @@
 
         <!-- Spotlight: proyecto actual, con fecha y redirección -->
         <a href="projects/toxic-delicacies.html" class="hero__spotlight" aria-label="Toxic Delicacies — ver proyecto actual">
-          <span class="stamp stamp--game pcard__stamp" data-i18n="idx.card.fj.stamp">Jugable</span>
+          <span class="stamp stamp--done pcard__stamp" data-i18n="idx.card.tp.stamp">Finalizado</span>
           <img src="assets/img/Main_ToxicDelicacies.png" alt="Toxic Delicacies">
           <div class="hero__spotlight__meta" data-i18n="idx.hero.spotlight.meta">2026 · Finalizado</div>
           <h3 class="hero__spotlight__title">Toxic Delicacies</h3>
@@ -83,9 +96,9 @@
 
       <div class="about__grid">
         <div class="about__bio reveal">
-          <p data-i18n="idx.about.p1">Soy Laura, productora multimedia en transición activa hacia el desarrollo de videojuegos. Actualmente curso el bootcamp de Unity Developer en Generation Colombia, donde estoy afinando las herramientas técnicas que ya intuía desde el diseño visual: composición, ritmo y cómo guiar la atención de alguien a través de un espacio.</p>
-          <p data-i18n="idx.about.p2">Me interesa particularmente el diseño narrativo y el diseño de niveles, sobre todo en juegos de plataformas: espacios donde cada obstáculo cuenta algo sobre el mundo que lo rodea. El proyecto actual, <em>Toxic Delicacies</em>, nace de esa intersección — un juego de inspección y memoria donde la toxicidad emerge de la combinación, no del ingrediente aislado.</p>
-          <p data-i18n="idx.about.p3">Vengo del branding y la ilustración digital, así que cuido tanto la lógica del sistema como la piel visual que lo comunica.</p>
+          <p data-i18n="idx.about.p1">Soy Laura, diseñadora y desarrolladora de videojuegos con base en producción multimedia. Curso el bootcamp de Unity Developer en Generation Colombia, afinando herramientas técnicas que ya intuía desde el diseño visual: composición, ritmo y cómo guiar la atención de alguien a través de un espacio.</p>
+          <p data-i18n="idx.about.p2">Me interesa particularmente el diseño narrativo y el diseño de niveles, sobre todo en juegos de plataformas y de inspección: espacios y sistemas donde cada mecánica cuenta algo sobre el mundo que representa. He explorado esto en distintos proyectos de game jam, combinando puzzles de deducción con narrativa ambiental.</p>
+          <p data-i18n="idx.about.p3">Vengo del branding y la ilustración digital, así que cuido tanto la lógica de un sistema como la piel visual que lo comunica.</p>
         </div>
 
         <div class="about__stackcard reveal">
@@ -136,12 +149,12 @@
           <article class="pcard">
             <div class="pcard__media">
               <img src="assets/img/Main_ToxicDelicacies.png" alt="Toxic Delicacies">
-              <span class="stamp stamp--game pcard__stamp" data-i18n="idx.card.fj.stamp">Jugable</span>
+              <span class="stamp stamp--done pcard__stamp" data-i18n="idx.card.tp.stamp">Finalizado</span>
             </div>
             <div class="pcard__body">
               <div class="pcard__meta" data-i18n="idx.card.tp.meta">2026 · Game Jam MadeToBePlayed</div>
               <h4 class="pcard__title">Toxic Delicacies</h4>
-              <p class="pcard__desc" data-i18n="idx.card.tp.desc">Juego de inspección y memoria en primera persona. Un catador forzado debe identificar qué combinaciones de ingredientes son tóxicas dentro de un mundo post-apocalíptico.</p>
+              <p class="pcard__desc" data-i18n="idx.card.tp.desc">Juego de inspección y memoria en primera persona creado para la Game Jam MadeToBePlayed. El jugador es el degustador de un restaurante y debe identificar qué combinaciones de ingredientes son tóxicas antes de servir cada plato.</p>
               <div class="pcard__tools"><span>Unity</span><span>C#</span><span>Pixel Art</span></div>
               <a href="projects/toxic-delicacies.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
@@ -151,12 +164,12 @@
           <article class="pcard">
             <div class="pcard__media">
               <img src="assets/img/Main_FlammyJim.png" alt="Flammy Jim">
-              <span class="stamp stamp--wip pcard__stamp" data-i18n="idx.card.tp.stamp">En desarrollo</span>
+              <span class="stamp stamp--wip pcard__stamp" data-i18n="idx.card.fj.stamp">En desarrollo</span>
             </div>
             <div class="pcard__body">
               <div class="pcard__meta" data-i18n="idx.card.fj.meta">Proyecto personal</div>
               <h4 class="pcard__title">Flammy Jim</h4>
-              <p class="pcard__desc" data-i18n="idx.card.fj.desc">Un endless flyer estilo Flappy Bird reconstruido desde cero a partir de un tutorial y con una identidad visual propia</p>
+              <p class="pcard__desc" data-i18n="idx.card.fj.desc">Un endless flyer estilo Flappy Bird, construido a partir de un tutorial y reimaginado con una flama como protagonista y estalactitas de hielo como obstáculos. Sigue recibiendo actualizaciones.</p>
               <div class="pcard__tools"><span>Unity</span><span>C#</span><span>Pixel Art</span></div>
               <a href="projects/flammy-jim.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
@@ -177,12 +190,12 @@
           <article class="pcard">
             <div class="pcard__media">
               <img src="assets/img/Main_ElPreciodeResistir.png" alt="El precio de resistir">
-              <span class="stamp stamp--design pcard__stamp" data-i18n="idx.card.epr.stamp">Diseño</span>
+              <span class="stamp stamp--done pcard__stamp" data-i18n="idx.card.epr.stamp">Finalizado</span>
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta" data-i18n="idx.card.epr.meta">Proyecto universitario</div>
+              <div class="pcard__meta" data-i18n="idx.card.epr.meta">Concept art · Preproducción VR 180°</div>
               <h4 class="pcard__title">El precio de resistir</h4>
-              <p class="pcard__desc" data-i18n="idx.card.epr.desc">Proyecto de identidad visual y narrativa desarrollado en la universidad, explorando composición y mensaje a través del diseño gráfico.</p>
+              <p class="pcard__desc" data-i18n="idx.card.epr.desc">Concept art para un proyecto audiovisual en VR 180° que recrea, desde la mirada de un niño, la huelga obrera de 1963 en la cementera El Cairo, Santa Bárbara, Antioquia. Adaptación narrativa de "Las Cruces Sobre el Agua", de Joaquín Gallegos Lara.</p>
               <div class="pcard__tools"><span>Illustrator</span><span>Photoshop</span></div>
               <a href="projects/el-precio-de-resistir.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
@@ -190,13 +203,13 @@
 
           <article class="pcard">
             <div class="pcard__media">
-              <img src="assets/img/Main_NotCo.png" alt="El precio de resistir">
-              <span class="stamp stamp--design pcard__stamp" data-i18n="idx.card.epr.stamp">Diseño</span>
+              <img src="assets/img/Main_NotCo.png" alt="Sitio web NotCo">
+              <span class="stamp stamp--done pcard__stamp" data-i18n="idx.card.notco.stamp">Ganador del reto</span>
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta" data-i18n="idx.card.notco.meta">SENA</div>
+              <div class="pcard__meta" data-i18n="idx.card.notco.meta">SENA · Reto de programación</div>
               <h4 class="pcard__title">Sitio web NotCo</h4>
-              <p class="pcard__desc" data-i18n="idx.card.notco.desc">Sitio web diseñado y maquetado como parte de mi proceso educativo en el SENA.</p>
+              <p class="pcard__desc" data-i18n="idx.card.notco.desc">Sitio web para el ingreso de NotCo a Colombia, desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA. Gané el reto por la implementación de la imagen de marca.</p>
               <div class="pcard__tools"><span>HTML</span><span>CSS</span><span>Photoshop</span><span>Illustrator</span></div>
               <a href="projects/notco-web.html" class="pcard__link"><span data-i18n="common.viewreport">Ver informe completo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
@@ -219,7 +232,7 @@
       <div class="cv__grid reveal">
         <div class="cv__block">
           <h4 data-i18n="idx.cv.resumen.title">Resumen</h4>
-          <p data-i18n="idx.cv.resumen.p">Productora multimedia en transición hacia el desarrollo de videojuegos, con enfoque en diseño narrativo y de niveles. Combino base técnica en programación con formación en diseño visual y comunicación.</p>
+          <p data-i18n="idx.cv.resumen.p">Diseñadora y desarrolladora de videojuegos con base en producción multimedia, enfocada en diseño narrativo y de niveles. Combino programación en Unity y C# con formación en diseño visual y comunicación.</p>
 
           <h4 data-i18n="idx.cv.tech.title">Habilidades técnicas</h4>
           <div class="tag-row">
@@ -288,6 +301,7 @@
 </main>
 
 <script src="js/i18n.js"></script>
+<script src="js/theme.js"></script>
 <script src="js/typewriter.js"></script>
 <script src="js/main.js"></script>
 </body>

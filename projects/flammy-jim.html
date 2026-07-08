@@ -6,6 +6,15 @@
 <title>Flammy Jim — Laura Rojas Pardo</title>
 <meta name="description" content="Flammy Jim: un endless flyer personalizado inspirado en Flappy Bird.">
 <link rel="stylesheet" href="../css/styles.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('laura-portfolio-theme');
+    if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 
@@ -20,6 +29,10 @@
       <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.theme.toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
       <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
         <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
       </button>
@@ -36,14 +49,14 @@
       <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
       <div class="pheader__stamps">
         <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
-        <span class="stamp stamp--done" data-i18n="fj.stamp.status">Jugable</span>
+        <span class="stamp stamp--wip" data-i18n="fj.stamp.status">En desarrollo</span>
       </div>
       <h1 class="pheader__title">Flammy Jim</h1>
-      <p class="pheader__lede" data-i18n="fj.lede">Un endless flyer propio, construido sobre la base de Flappy Bird, con identidad visual personalizada y una mecánica adicional que cambia su ritmo.</p>
+      <p class="pheader__lede" data-i18n="fj.lede">Un endless flyer propio construido a partir de un tutorial, con una flama como protagonista, estalactitas de hielo como obstáculos, y una mecánica diferenciadora todavía por llegar.</p>
 
       <div class="infobar">
         <div class="infobar__item"><h4 data-i18n="common.infobar.type">Tipo</h4><p data-i18n="fj.info.type">Proyecto personal</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="fj.info.status">Jugable</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="fj.info.status">Jugable — en desarrollo continuo</p></div>
         <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="fj.info.role">Diseño, arte y programación</p></div>
         <div class="infobar__item"><h4 data-i18n="common.infobar.genre">Género</h4><p>Endless flyer</p></div>
       </div>
@@ -55,15 +68,17 @@
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.desc">Descripción</h2>
-        <p data-i18n="fj.desc.p1">Flammy Jim toma la fórmula reconocible de Flappy Bird —esquivar obstáculos manteniendo el vuelo con un solo input— y la reconstruye con arte propio y una mecánica adicional que altera el ritmo habitual del género. El objetivo era practicar el ciclo completo de un proyecto pequeño y personal: diseño, arte y programación, de principio a fin, sin depender de un equipo.</p>
+        <p><span data-i18n="fj.desc.p1a">Flammy Jim nació como ejercicio práctico a partir de </span><a href="https://www.youtube.com/watch?v=XtQMytORBmM&amp;t=1422s" target="_blank" rel="noopener">The Unity Tutorial For Complete Beginners</a><span data-i18n="fj.desc.p1b">, para aterrizar en un proyecto pequeño el ciclo completo de diseño, arte y programación. Sobre esa base técnica, lo reimaginé visualmente: en vez de un pájaro, una pequeña flama; en vez de tubos, estalactitas de hielo.</span></p>
+        <p data-i18n="fj.desc.p2">Ya está publicado en itch.io, pero no es su versión final — sigue recibiendo actualizaciones. Mi objetivo pendiente es incorporar una mecánica que lo diferencie de un Flappy Bird estándar; todavía no está implementada, así que por ahora es la siguiente meta del proyecto, no una funcionalidad terminada.</p>
       </section>
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
         <ol class="process-list">
-          <li data-n="01"><strong data-i18n="fj.process.1.title">Punto de partida</strong><span data-i18n="fj.process.1.body">Elegí un clásico simple e ineludible como base para poder enfocarme en la ejecución más que en inventar un sistema desde cero.</span></li>
-          <li data-n="02"><strong data-i18n="fj.process.2.title">Identidad propia</strong><span data-i18n="fj.process.2.body">Rediseñé por completo la parte visual: personaje, fondo y paleta, alejándome de la referencia original.</span></li>
-          <li data-n="03"><strong data-i18n="fj.process.3.title">Una mecánica, un cambio de ritmo</strong><span data-i18n="fj.process.3.body">Incorporé una mecánica adicional pensada específicamente para romper la monotonía del loop original de "esquivar y esquivar".</span></li>
+          <li data-n="01"><strong data-i18n="fj.process.1.title">Base técnica guiada</strong><span data-i18n="fj.process.1.body">Seguí un tutorial de introducción a Unity para tener una base sólida de mecánicas de vuelo y colisiones, y enfocar mi energía en la ejecución más que en resolver un sistema desde cero.</span></li>
+          <li data-n="02"><strong data-i18n="fj.process.2.title">Reskin visual completo</strong><span data-i18n="fj.process.2.body">Rediseñé personaje, obstáculos y paleta: el pájaro se convirtió en una pequeña flama, y los tubos en estalactitas de hielo, alejándome por completo de la referencia original.</span></li>
+          <li data-n="03"><strong data-i18n="fj.process.3.title">Publicar y seguir iterando</strong><span data-i18n="fj.process.3.body">Subí el juego a itch.io como primera versión jugable, sabiendo que recibiría actualizaciones — no lo trato como un proyecto cerrado.</span></li>
+          <li data-n="04"><strong data-i18n="fj.process.4.title">Meta pendiente</strong><span data-i18n="fj.process.4.body">Tengo planeada una mecánica que rompa la monotonía del loop original de "esquivar y esquivar" y diferencie el juego de un Flappy Bird estándar. Todavía no la he implementado.</span></li>
         </ol>
       </section>
 
@@ -88,9 +103,9 @@
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.links">Enlaces</h2>
+        <p><em data-i18n="fj.links.note">El repositorio de este proyecto es privado por ahora.</em></p>
         <div class="plinks">
           <a href="https://kath-4.itch.io/" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
-          <a href="https://github.com/laurarojaspardo-dot" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.repo">Ver repositorio</a>
         </div>
       </section>
 
@@ -101,6 +116,7 @@
 <footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / Level Designer</footer>
 
 <script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

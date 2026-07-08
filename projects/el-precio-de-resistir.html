@@ -6,6 +6,15 @@
 <title>El precio de resistir — Laura Rojas Pardo</title>
 <meta name="description" content="El precio de resistir: proyecto de identidad visual y diseño gráfico universitario.">
 <link rel="stylesheet" href="../css/styles.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('laura-portfolio-theme');
+    if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 
@@ -20,6 +29,10 @@
       <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.theme.toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
       <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
         <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
       </button>
@@ -39,13 +52,13 @@
         <span class="stamp stamp--done" data-i18n="epr.stamp.status">Finalizado</span>
       </div>
       <h1 class="pheader__title">El precio de resistir</h1>
-      <p class="pheader__lede" data-i18n="epr.lede">Proyecto universitario de identidad visual y diseño gráfico, enfocado en comunicar un mensaje a través de composición e ilustración.</p>
+      <p class="pheader__lede" data-i18n="epr.lede">Concept art de un proyecto audiovisual en VR 180° que recrea, desde la mirada de un niño, la huelga obrera de 1963 en la cementera El Cairo, Santa Bárbara, Antioquia.</p>
 
       <div class="infobar">
-        <div class="infobar__item"><h4 data-i18n="common.infobar.type">Tipo</h4><p data-i18n="epr.info.type">Proyecto universitario</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.type">Tipo</h4><p data-i18n="epr.info.type">Concept art · Preproducción VR 180°</p></div>
         <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="epr.info.status">Finalizado</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="epr.info.role">Diseño gráfico e ilustración</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.area">Área</h4><p data-i18n="epr.info.area">Identidad visual</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="epr.info.role">Dirección de proyecto, investigación y narrativa</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.area">Área</h4><p data-i18n="epr.info.area">Memoria histórica / concept art</p></div>
       </div>
     </div>
   </header>
@@ -55,23 +68,41 @@
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.desc">Descripción</h2>
-        <p><em data-i18n="epr.desc.note">Nota: esta sección está en borrador — cuéntame más detalles del brief y el mensaje del proyecto para completarla con precisión.</em></p>
-        <p data-i18n="epr.desc.p1">El precio de resistir es un proyecto de diseño gráfico desarrollado durante mi formación universitaria, centrado en construir una identidad visual coherente que comunique un mensaje concreto a través de composición, tipografía e ilustración.</p>
+        <p data-i18n="epr.desc.p1">El precio de resistir es el concept art de un proyecto audiovisual en formato VR 180° que recrea, desde la perspectiva de un niño, los acontecimientos de la huelga de los trabajadores de la cementera El Cairo, en Santa Bárbara (Antioquia), en 1963. El proyecto combina investigación histórica y creación narrativa para representar las condiciones sociales, las luchas obreras y las experiencias de las familias afectadas por la represión estatal.</p>
+        <p data-i18n="epr.desc.p2">A través de Daniel, el protagonista —representado como un pequeño conejo—, se contrasta la dureza del entorno con la imaginación como refugio frente a la violencia. Su propósito es preservar la memoria de este episodio histórico desde una mirada sensible y crítica, contribuyendo a reconocer las luchas sociales y la resistencia como un acto de dignidad colectiva.</p>
+        <p data-i18n="epr.desc.p3">Es una adaptación narrativa de <em>"Las Cruces Sobre el Agua"</em>, novela social e histórica de Joaquín Gallegos Lara, que narra la masacre obrera del 15 de noviembre de 1922 en Guayaquil, Ecuador. Tomamos como referencia especialmente su capítulo IV, centrado en la explotación laboral y las injusticias que enfrentaban los jóvenes trabajadores de la época, para trasladar ese mismo espíritu de denuncia al contexto colombiano de 1963.</p>
       </section>
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
-        <p><em data-i18n="epr.process.note">Espacio reservado para el detalle del proceso: brief inicial, referencias, bocetos y decisiones de dirección de arte. Se puede completar con capturas del proceso cuando estén disponibles.</em></p>
+        <ol class="process-list">
+          <li data-n="01"><strong data-i18n="epr.process.1.title">Investigación histórica</strong><span data-i18n="epr.process.1.body">Investigué las condiciones laborales y el contexto social de la huelga de 1963 en la cementera El Cairo, en Santa Bárbara, Antioquia, como base documental del proyecto.</span></li>
+          <li data-n="02"><strong data-i18n="epr.process.2.title">Adaptación narrativa</strong><span data-i18n="epr.process.2.body">Tomé "Las Cruces Sobre el Agua" de Joaquín Gallegos Lara como punto de partida y desarrollé la idea narrativa de trasladar ese espíritu de denuncia obrera al contexto colombiano, contado desde la mirada de un niño.</span></li>
+          <li data-n="03"><strong data-i18n="epr.process.3.title">Fichas de personaje</strong><span data-i18n="epr.process.3.body">Desarrollé las fichas de personaje, incluyendo a Daniel, representado como un pequeño conejo para reforzar el contraste entre la dureza del entorno y la imaginación como refugio.</span></li>
+          <li data-n="04"><strong data-i18n="epr.process.4.title">Dirección de arte</strong><span data-i18n="epr.process.4.body">Dirigí a las ilustradoras del equipo en el desarrollo visual de personajes y escenarios, manteniendo coherencia con la investigación histórica y la intención narrativa.</span></li>
+          <li data-n="05"><strong data-i18n="epr.process.5.title">Planeación</strong><span data-i18n="epr.process.5.body">Construí un diagrama de Gantt en Excel para llevar el cronograma de trabajo del equipo a lo largo del proyecto.</span></li>
+          <li data-n="06"><strong data-i18n="epr.process.6.title">Diagramación del libro de producción</strong><span data-i18n="epr.process.6.body">Diagramé por completo el libro de producción, documentando el desarrollo conceptual, creativo y técnico de la obra.</span></li>
+        </ol>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="epr.team.title">Equipo</h2>
+        <p data-i18n="epr.team.intro">Lideré el proyecto: investigación, análisis, fichas de personaje, idea narrativa y diagramación del libro de producción. Las ilustraciones se desarrollaron bajo mi dirección junto a:</p>
+        <ul class="cv__list">
+          <li><strong>Danna Peña, Evely Bonilla, Camila Sáyer</strong> — <span data-i18n="epr.team.role.personajes">Ilustración de personajes</span></li>
+          <li><strong>Natalia Aguilar, Zharyk Castro</strong> — <span data-i18n="epr.team.role.escenarios">Ilustración de escenarios</span></li>
+        </ul>
       </section>
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.tools">Herramientas</h2>
         <div class="tag-row">
-          <span class="tag">Illustrator</span><span class="tag">Photoshop</span>
+          <span class="tag">Illustrator</span><span class="tag">Photoshop</span><span class="tag">Word</span><span class="tag">Excel</span>
         </div>
         <h2 style="margin-top:36px;" data-i18n="common.section.skills">Habilidades demostradas</h2>
         <div class="tag-row">
-          <span class="tag">Diseño gráfico</span><span class="tag">Ilustración</span><span class="tag">Identidad visual</span>
+          <span class="tag">Investigación</span><span class="tag">Dirección de arte</span><span class="tag">Escritura narrativa</span>
+          <span class="tag">Diagramación editorial</span><span class="tag">Gestión de proyecto</span>
         </div>
       </section>
 
@@ -83,6 +114,13 @@
         </div>
       </section>
 
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.links">Enlaces</h2>
+        <div class="plinks">
+          <a href="https://drive.google.com/file/d/1cmNDL8BEyuYIYC1mSNWR05z5U60KXo-7/view" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="epr.links.book">Ver libro de producción</a>
+        </div>
+      </section>
+
     </div>
   </div>
 </main>
@@ -90,6 +128,7 @@
 <footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / Level Designer</footer>
 
 <script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

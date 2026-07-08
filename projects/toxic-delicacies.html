@@ -6,6 +6,15 @@
 <title>Toxic Delicacies — Laura Rojas Pardo</title>
 <meta name="description" content="Toxic Delicacies: juego de inspección y memoria desarrollado para un game jam sobre lo tóxico.">
 <link rel="stylesheet" href="../css/styles.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('laura-portfolio-theme');
+    if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 
@@ -20,6 +29,10 @@
       <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.theme.toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
       <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
         <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
       </button>
@@ -36,16 +49,16 @@
       <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
       <div class="pheader__stamps">
         <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
-        <span class="stamp stamp--wip" data-i18n="tp.stamp.status">En desarrollo</span>
+        <span class="stamp stamp--done" data-i18n="tp.stamp.status">Finalizado</span>
       </div>
       <h1 class="pheader__title">Toxic Delicacies</h1>
-      <p class="pheader__lede" data-i18n="tp.lede">Un juego de inspección y memoria en primera persona sobre descubrir qué combinaciones —no ingredientes— convierten un plato en veneno.</p>
+      <p class="pheader__lede" data-i18n="tp.lede">Un juego de inspección y memoria en primera persona: eres el degustador de un restaurante y debes descubrir qué combinaciones —no ingredientes— convierten un plato en veneno.</p>
 
       <div class="infobar">
         <div class="infobar__item"><h4 data-i18n="common.infobar.year">Año</h4><p>2026</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="tp.info.status">En desarrollo (game jam)</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="tp.info.role">Diseño de niveles, narrativa y assets</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.duration">Duración</h4><p data-i18n="tp.info.duration">Ciclo de game jam</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="tp.info.status">Finalizado (game jam)</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="tp.info.role">Arte de assets y diseño de juego</p></div>
+        <div class="infobar__item"><h4 data-i18n="common.infobar.duration">Duración</h4><p data-i18n="tp.info.duration">Game Jam MadeToBePlayed (25 jun – 5 jul 2026)</p></div>
       </div>
     </div>
   </header>
@@ -55,25 +68,37 @@
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.desc">Descripción</h2>
-        <p data-i18n="tp.desc.p1">Toxic Delicacies se desarrolló para un game jam con el tema "tóxico". En un mundo post-apocalíptico gobernado por una organización llamada El Consorcio, el jugador asume el rol de un catador forzado: alguien obligado a probar y clasificar comida antes de que llegue a manos de otros.</p>
-        <p data-i18n="tp.desc.p2">El problema de diseño central era evitar la solución obvia de "objetos buenos vs. objetos malos". En su lugar, la toxicidad surge de la combinación de ingredientes, no del ingrediente en sí mismo — lo que convierte cada plato en un pequeño rompecabezas de memoria y deducción en vez de una simple lista de prohibidos.</p>
-        <p data-i18n="tp.desc.p3">El público objetivo son jugadores de juegos de inspección y narrativa ambiental, interesados en mecánicas de puzzle contemplativas más que en reflejos o acción.</p>
+        <p data-i18n="tp.desc.p1">Toxic Delicacies se desarrolló para MadeToBePlayed, la game jam organizada por MintMood entre el 25 de junio y el 5 de julio de 2026. El tema revelado fue "tóxico". Lo desarrollamos en equipo: Jorge Horta y Mónica Juarez en programación, Jabnel Bobadilla y Esteban Romero en arte, Valentina Castrillon en arte y UI/UX, y yo en arte de assets y diseño de juego.</p>
+        <p data-i18n="tp.desc.p2">La narrativa cambió bastante durante el desarrollo: empezamos con un mundo post-apocalíptico y terminamos en algo más ligero y concreto — el jugador es el degustador de un restaurante, encargado de probar cada plato antes de que llegue a los comensales. El problema de diseño central se mantuvo intacto durante todo ese cambio: evitar la solución obvia de "ingredientes buenos vs. ingredientes malos". La toxicidad surge de la combinación, no del ingrediente en sí — cada plato es un pequeño rompecabezas de memoria y deducción.</p>
+        <p data-i18n="tp.desc.p3">El público objetivo son jugadores de juegos de inspección y narrativa ligera, interesados en mecánicas de puzzle contemplativas más que en reflejos o acción.</p>
       </section>
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
         <ol class="process-list">
-          <li data-n="01"><strong data-i18n="tp.process.1.title">Interpretar el tema del jam</strong><span data-i18n="tp.process.1.body">Partimos de "tóxico" como tema y decidimos evitar la lectura literal (veneno como objeto) para explorar la toxicidad como propiedad emergente de una combinación — una decisión de diseño que definió todo el sistema de juego.</span></li>
-          <li data-n="02"><strong data-i18n="tp.process.2.title">Construir el mundo: El Consorcio</strong><span data-i18n="tp.process.2.body">Diseñamos el contexto narrativo de una organización opresiva que controla el suministro de alimentos, dando sentido a por qué el catador está atrapado en su rol y qué está realmente en juego si falla.</span></li>
+          <li data-n="01"><strong data-i18n="tp.process.1.title">Interpretar el tema del jam</strong><span data-i18n="tp.process.1.body">MintMood reveló "tóxico" como tema de MadeToBePlayed. Decidimos evitar la lectura literal (veneno como objeto) y explorar la toxicidad como propiedad emergente de una combinación — una decisión que definió todo el sistema de juego.</span></li>
+          <li data-n="02"><strong data-i18n="tp.process.2.title">Iterar la narrativa</strong><span data-i18n="tp.process.2.body">La primera versión situaba la historia en un mundo post-apocalíptico opresivo. A mitad del jam la reenfocamos hacia algo más concreto y jugable: un restaurante, con el jugador en el rol de su degustador. El sistema de combinaciones no cambió — solo el mundo que lo envolvía.</span></li>
           <li data-n="03"><strong data-i18n="tp.process.3.title">Sistema de combinaciones</strong><span data-i18n="tp.process.3.body">Definimos las fichas de ingredientes y sus reglas de interacción, de forma que ninguna ficha sea "mala" por sí sola — la toxicidad depende exclusivamente de con qué se combina.</span></li>
-          <li data-n="04"><strong data-i18n="tp.process.4.title">Documentar en el GDD</strong><span data-i18n="tp.process.4.body">Mantuvimos un Game Design Document vivo (actualmente en v1.3) para sincronizar mecánicas, narrativa y arte entre el equipo a medida que el alcance del jam se ajustaba.</span></li>
-          <li data-n="05"><strong data-i18n="tp.process.5.title">Producción de assets</strong><span data-i18n="tp.process.5.body">Trabajé specs de sprites y prompts de generación de imágenes para mantener consistencia visual entre los platos, ingredientes y el entorno del juego.</span></li>
+          <li data-n="04"><strong data-i18n="tp.process.4.title">Coordinar al equipo y el GDD</strong><span data-i18n="tp.process.4.body">Con seis personas en distintos roles, mantuvimos un GDD vivo para sincronizar mecánicas, narrativa y arte a medida que el alcance se ajustaba dentro de los diez días del jam.</span></li>
+          <li data-n="05"><strong data-i18n="tp.process.5.title">Producción de assets</strong><span data-i18n="tp.process.5.body">Como parte del equipo de arte, trabajé specs de sprites y assets para mantener consistencia visual entre platos, ingredientes y el entorno del restaurante.</span></li>
         </ol>
       </section>
 
       <section class="pbody__section">
+        <h2 data-i18n="tp.team.title">Equipo</h2>
+        <ul class="cv__list">
+          <li><strong>Jorge Horta</strong> — <span data-i18n="tp.team.role.jorge">Programación y diseño de juego</span></li>
+          <li><strong>Mónica Juarez</strong> — <span data-i18n="tp.team.role.monica">Programación</span></li>
+          <li><strong>Jabnel Bobadilla</strong> — <span data-i18n="tp.team.role.jabnel">Arte de escenarios</span></li>
+          <li><strong>Esteban Romero</strong> — <span data-i18n="tp.team.role.esteban">Arte de assets</span></li>
+          <li><strong>Valentina Castrillon</strong> — <span data-i18n="tp.team.role.valentina">Arte y programación UI/UX</span></li>
+          <li><strong>Laura Rojas (yo)</strong> — <span data-i18n="tp.team.role.laura">Arte de assets y diseño de juego</span></li>
+        </ul>
+      </section>
+
+      <section class="pbody__section">
         <h2 data-i18n="tp.challenges.title">Retos y aprendizajes</h2>
-        <p data-i18n="tp.challenges.p">El mayor reto fue balancear la complejidad del sistema de combinaciones para que se sintiera como un misterio resoluble y no como memorización arbitraria — es decir, diseño de puzzle real, no una lista disfrazada. También aprendí a mantener un GDD como documento vivo dentro de los tiempos ajustados de un jam, iterando la documentación al mismo ritmo que el prototipo.</p>
+        <p data-i18n="tp.challenges.p">El mayor reto fue balancear la complejidad del sistema de combinaciones para que se sintiera como un misterio resoluble y no como memorización arbitraria. A eso se sumó coordinar a seis personas en roles distintos dentro de los diez días del jam, incluyendo el giro narrativo a mitad de camino — mantener el GDD como documento vivo fue clave para que todo el equipo avanzara alineado pese al cambio.</p>
       </section>
 
       <section class="pbody__section">
@@ -113,6 +138,7 @@
 <footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / Level Designer</footer>
 
 <script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
