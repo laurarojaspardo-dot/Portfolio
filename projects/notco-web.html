@@ -44,21 +44,36 @@
 </nav>
 
 <main>
+  <!-- HEADER -->
   <header class="pheader">
     <div class="wrap">
-      <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
-      <div class="pheader__stamps">
-        <span class="stamp stamp--design" data-i18n="common.stamp.design">Diseño</span>
-        <span class="stamp stamp--done" data-i18n="notco.stamp.status">Ganador del reto</span>
-      </div>
-      <h1 class="pheader__title">Sitio web NotCo</h1>
-      <p class="pheader__lede" data-i18n="notco.lede">Sitio web desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA, para presentar la llegada de NotCo a Colombia con un toque local.</p>
+      <div class="pheader__grid">
 
-      <div class="infobar">
-        <div class="infobar__item"><h4 data-i18n="common.infobar.type">Tipo</h4><p data-i18n="notco.info.type">Reto de programación — SENA</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="notco.info.status">Publicado — ganador del reto</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="notco.info.role">Programación e implementación web</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.area">Área</h4><p data-i18n="notco.info.area">Desarrollo web</p></div>
+        <!-- ---------- Columna izquierda: texto ---------- -->
+        <div class="pheader__main">
+          <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+          <div class="pheader__stamps">
+            <span class="stamp stamp--design" data-i18n="common.stamp.design">Diseño</span>
+            <span class="stamp stamp--done" data-i18n="notco.stamp.status">Ganador del reto</span>
+          </div>
+          <h1 class="pheader__title">Sitio web NotCo</h1>
+          <p class="pheader__lede" data-i18n="notco.lede">Sitio web desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA, para presentar la llegada de NotCo a Colombia de forma hipotética con un toque local.</p>
+
+          <div class="infobar">
+            <div class="infobar__item"><h4 data-i18n="common.infobar.year">Año</h4><p data-i18n="notco.info.year">2023</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="notco.info.status">Publicado</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="notco.info.role">Programación e implementación web</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.area">Área</h4><p data-i18n="notco.info.area">Desarrollo web</p></div>
+          </div>
+        </div>
+
+        <!-- ---------- Columna derecha: video ---------- -->
+        <div class="pheader__media">
+          <div class="video-embed">
+              <video src="../assets/video/Main_NotCo.mp4" controls ></video>
+            </div>
+        </div>
+
       </div>
     </div>
   </header>
@@ -68,12 +83,12 @@
 
       <section class="pbody__section">
         <h2 data-i18n="common.section.desc">Descripción</h2>
-        <p data-i18n="notco.desc.p1">Este proyecto surgió como un reto de programación durante mi etapa electiva en el SENA: en 2-3 días, debíamos desarrollar el sitio web de una marca que llegaba a Colombia — en este caso, NotCo — implementando el producto con un toque de sabor colombiano.</p>
-        <p data-i18n="notco.desc.p2">Trabajé en equipo con dos compañeros que se encargaron de algunas piezas gráficas; yo me encargué de toda la programación e implementación del sitio. Por la limitación de tiempo, el sitio no cuenta con diseño responsive — no alcanzamos a cubrirlo dentro del reto.</p>
-        <p data-i18n="notco.desc.p3">Fuimos reconocidas como ganadoras del reto por la buena implementación web de la imagen de marca de NotCo.</p>
+        <p data-i18n="notco.desc.p1">Este proyecto surgió como un reto de programación durante mi etapa electiva en el SENA: en 2-3 días, debíamos desarrollar el sitio web de una marca que llegaba a Colombia, en este caso, NotCo, implementando el producto con un toque de sabor colombiano.</p>
+        <p data-i18n="notco.desc.p2">Trabajé en equipo con dos compañeros que se encargaron de algunas piezas gráficas; yo me encargué de toda la programación, algunas piezas gráficas y la implementación del sitio. Por la limitación de tiempo, el sitio no cuenta con diseño responsive, no alcanzamos a cubrirlo dentro del reto.</p>
+        <p data-i18n="notco.desc.p3">Fuimos reconocidos como ganadores del reto por la buena implementación web de la imagen de marca de NotCo.</p>
       </section>
 
-      <section class="pbody__section">
+      <section class="pbody__section pbody__section--wide">
         <h2 data-i18n="common.section.tools">Herramientas</h2>
         <div class="tag-row">
           <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Photoshop</span><span class="tag">Illustrator</span>
@@ -84,11 +99,16 @@
         </div>
       </section>
 
-      <section class="pbody__section">
+      <section class="pbody__section pbody__section--wide">
         <h2 data-i18n="common.section.gallery">Galería</h2>
         <div class="pgallery">
-          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
-          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+          <img src="../assets/img/NotCo/Gallery_1.png" alt="NotCo">
+          <img src="../assets/img/NotCo/Gallery_2.png" alt="NotCo">
+          <img src="../assets/img/NotCo/Gallery_3.png" alt="NotCo">
+          <img src="../assets/img/NotCo/Gallery_4.png" alt="NotCo">
+          <img src="../assets/img/NotCo/Gallery_5.png" alt="NotCo">
+          <img src="../assets/img/NotCo/Gallery_6.png" alt="NotCo">
+          <img src="../assets/img/NotCo/Gallery_7.png" alt="NotCo">
         </div>
       </section>
 
@@ -108,6 +128,7 @@
 
 <script src="../js/i18n.js"></script>
 <script src="../js/theme.js"></script>
+<script src="../js/lightbox.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dream Stalker — Laura Rojas Pardo</title>
+<meta name="description" content="The Dream Stalker: juego de terror en primera persona ambientado en el sueño fracturado de un niño.">
+<link rel="stylesheet" href="../css/styles.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('laura-portfolio-theme');
+    if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">LAURA<span>.ROJAS</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="../index.html#sobre-mi" data-i18n="nav.sobre">Sobre mí</a></li>
+      <li><a href="../index.html#portafolio" data-i18n="nav.portafolio">Portafolio</a></li>
+      <li><a href="../index.html#cv" data-i18n="nav.cv">CV</a></li>
+      <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.theme.toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HEADER -->
+  <header class="pheader">
+    <div class="wrap">
+      <div class="pheader__grid">
+
+        <!-- ---------- Columna izquierda: texto ---------- -->
+        <div class="pheader__main">
+          <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+          <div class="pheader__stamps">
+            <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
+            <span class="stamp stamp--done" data-i18n="tds.stamp.status">Finalizado</span>
+          </div>
+          <h1 class="pheader__title">The Dream Stalker</h1>
+          <p class="pheader__lede" data-i18n="tds.lede">Un juego de terror en primera persona ambientado en el sueño fracturado de un niño: debes purificar dos mitades opuestas de una criatura antes de que la pesadilla lo consuma.</p>
+
+          <div class="infobar">
+            <div class="infobar__item"><h4 data-i18n="common.infobar.year">Año</h4><p>2026</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="tds.info.status">Publicado</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="tds.info.role">Diseño de narrativa, diseño UI y documentación</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.theme">Tema</h4><p data-i18n="tds.info.theme">You Really Shouldn't Mix Those Game Jam</p></div>
+          </div>
+        </div>
+
+        <!-- ---------- Columna derecha: video ---------- -->
+        <div class="pheader__media">
+          <div class="video-embed">
+              <video src="../assets/video/Main_TheDreamStalker.mp4" controls ></video>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+<!-- Formas de insertar video:
+    Video YouTube:
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
+            title="Gameplay de ..."
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+      </div>
+    Archivo de video propio:
+      <div class="video-embed">
+        <video src="../assets/video/..." controls poster="../assets/img/..."></video>
+      </div>
+-->
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.desc">Descripción</h2>
+        <p data-i18n="tds.desc.p1">The Dream Stalker es un juego de terror en primera persona ambientado dentro del sueño fracturado de un niño. El jugador es un guardián encargado de separar y purificar dos mitades opuestas de una criatura híbrida entre pesadilla y sueño, mientras es acechado por Mothroach: una mezcla entre las fobias más comunes a los insectos y la apariencia engañosamente inofensiva de una polilla bebé.</p>
+        <p data-i18n="tds.desc.p2">Para lograrlo hay que recolectar baterías para la linterna y mantener a la criatura a raya mientras se resuelve el misterio de sus dos fragmentos, con el objetivo de sanar el sueño y salvar al niño antes de que la pesadilla lo consuma por completo.</p>
+        <p data-i18n="tds.desc.p3">Se desarrolló para la "You Really Shouldn't Mix Those Game Jam" y ya está publicado, disponible para jugar directamente en el navegador (WebGL) a través de itch.io. Está pensado para jugadores de game jams y fans del terror ligero con elementos de puzzle.</p>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
+        <ol class="process-list">
+          <li data-n="01"><strong data-i18n="tds.process.1.title">El HUD, desde el primer día</strong><span data-i18n="tds.process.1.body">Durante los tres primeros días del jam desarrollé el HUD completo y todos sus scripts, mientras el resto del equipo avanzaba en paralelo con el movimiento en primera persona, la linterna y la IA del enemigo (patrullar → perseguir → separar → purificar).</span></li>
+          <li data-n="02"><strong data-i18n="tds.process.2.title">Menú principal</strong><span data-i18n="tds.process.2.body">Con el mapa principal y el HUD ya en pie, diseñé e implementé el menú principal del juego.</span></li>
+          <li data-n="03"><strong data-i18n="tds.process.3.title">Documentación viva</strong><span data-i18n="tds.process.3.body">En paralelo al desarrollo, mantuve actualizado el GDD base en Word, para que el equipo tuviera siempre una referencia clara de las decisiones de diseño a medida que avanzaba el jam.</span></li>
+          <li data-n="04"><strong data-i18n="tds.process.4.title">Pantallas de victoria y derrota</strong><span data-i18n="tds.process.4.body">Diseñé e implementé las pantallas de victoria y derrota, cerrando el ciclo de feedback del jugador.</span></li>
+          <li data-n="05"><strong data-i18n="tds.process.5.title">Integración final en Unity</strong><span data-i18n="tds.process.5.body">Integré todos estos elementos —HUD, menú, pantallas de fin de partida y una ventana de créditos— dentro de Unity mediante scripts, como parte del pulido general del proyecto (efectos de sonido, música y menús).</span></li>
+          <li data-n="06"><strong data-i18n="tds.process.6.title">Cierre: GDD y pitch</strong><span data-i18n="tds.process.6.body">El último día del jam me encargué del diseño final del GDD y del pitch usado para presentar el proyecto, coincidiendo con su publicación el 10 de julio de 2026.</span></li>
+        </ol>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="tds.team.title">Equipo</h2>
+        <ul class="cv__list">
+          <li><strong>Julian Gonzalez</strong> — <span data-i18n="tds.team.role.norajulia">Programación</span></li>
+          <li><strong>Sebastian Villota</strong> — <span data-i18n="tds.team.role.dyenome">Arte 3D / Programación</span></li>
+          <li><strong>Jose Rodriguez</strong> — <span data-i18n="tds.team.role.mgilford">Programación</span></li>
+          <li><strong>Laura Rojas (yo)</strong> — <span data-i18n="tds.team.role.laura">Diseño UI / Documentación</span></li>
+        </ul>
+      </section>
+
+
+      <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.tools">Herramientas</h2>
+        <div class="tag-row">
+          <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Figma</span><span class="tag">GitHub</span><span class="tag">Affinity Designer</span>
+        </div>
+        <h2 style="margin-top:36px;" data-i18n="common.section.skills">Habilidades demostradas</h2>
+        <div class="tag-row">
+          <span class="tag">Game Design</span><span class="tag">Trabajo en equipo</span><span class="tag">Narrative Design</span><span class="tag">Documentación (GDD)</span>
+        </div>
+      </section>
+
+      <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.gallery">Galería</h2>
+        <div class="pgallery">
+          <img src="../assets/img/TheDreamStalker/Gallery_0.png" alt="The Dream Stalker">
+          <img src="../assets/img/TheDreamStalker/Gallery_1.png" alt="The Dream Stalker">
+          <img src="../assets/img/TheDreamStalker/Gallery_2.png" alt="The Dream Stalker">
+          <img src="../assets/img/TheDreamStalker/Gallery_3.png" alt="The Dream Stalker">
+          <img src="../assets/img/TheDreamStalker/Gallery_4.png" alt="The Dream Stalker">
+          <img src="../assets/img/TheDreamStalker/Gallery_5.png" alt="The Dream Stalker">
+          <img src="../assets/img/TheDreamStalker/Gallery_6.png" alt="The Dream Stalker">
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.links">Enlaces</h2>
+        <div class="plinks">
+          <a href="https://norajulia.itch.io/thedreamstalker" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
+          <a href="https://github.com/Dyenome/Nightmares-and-Dreams" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.repo">Ver repositorio</a>
+          <a href="https://drive.google.com/file/d/15cbpuDMV4I2kYp96rduWOHJm6IRW3-Uk/view?usp=sharing" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="tds.links.gdd">Ver GDD</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / Level Designer</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

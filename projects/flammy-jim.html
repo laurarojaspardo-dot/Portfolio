@@ -44,24 +44,39 @@
 </nav>
 
 <main>
+  <!-- HEADER -->
   <header class="pheader">
     <div class="wrap">
-      <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
-      <div class="pheader__stamps">
-        <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
-        <span class="stamp stamp--wip" data-i18n="fj.stamp.status">En desarrollo</span>
-      </div>
-      <h1 class="pheader__title">Flammy Jim</h1>
-      <p class="pheader__lede" data-i18n="fj.lede">Un endless flyer propio construido a partir de un tutorial, con una flama como protagonista, estalactitas de hielo como obstáculos, y una mecánica diferenciadora todavía por llegar.</p>
+      <div class="pheader__grid">
 
-      <div class="infobar">
-        <div class="infobar__item"><h4 data-i18n="common.infobar.type">Tipo</h4><p data-i18n="fj.info.type">Proyecto personal</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="fj.info.status">Jugable — en desarrollo continuo</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="fj.info.role">Diseño, arte y programación</p></div>
-        <div class="infobar__item"><h4 data-i18n="common.infobar.genre">Género</h4><p>Endless flyer</p></div>
+        <!-- ---------- Columna izquierda: texto ---------- -->
+        <div class="pheader__main">
+          <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+          <div class="pheader__stamps">
+            <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
+            <span class="stamp stamp--wip" data-i18n="fj.stamp.status">En desarrollo</span>
+          </div>
+          <h1 class="pheader__title">Flammy Jim</h1>
+          <p class="pheader__lede" data-i18n="fj.lede">Un endless flyer propio construido a partir de un tutorial, con una flama como protagonista, estalactitas de hielo como obstáculos, y una mecánica diferenciadora todavía por llegar.</p>
+
+          <div class="infobar">
+            <div class="infobar__item"><h4 data-i18n="common.infobar.year">Año</h4><p data-i18n="fj.info.year">2026</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="fj.info.status">En desarrollo</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="fj.info.role">Diseño, arte y programación</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.genre">Género</h4><p>Endless flyer</p></div>
+          </div>
+        </div>
+
+        <!-- ---------- Columna derecha: video ---------- -->
+          <div class="pheader__media">
+            <div class="video-embed">
+              <video src="../assets/video/Main_FlammyJim.mp4" controls ></video>
+            </div>
+          </div>
+
       </div>
     </div>
-  </header>
+    </header>
 
   <div class="pbody">
     <div class="wrap">
@@ -82,7 +97,7 @@
         </ol>
       </section>
 
-      <section class="pbody__section">
+      <section class="pbody__section pbody__section--wide">
         <h2 data-i18n="common.section.tools">Herramientas</h2>
         <div class="tag-row">
           <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Pixel Art</span>
@@ -93,11 +108,12 @@
         </div>
       </section>
 
-      <section class="pbody__section">
+      <section class="pbody__section pbody__section--wide">
         <h2 data-i18n="common.section.gallery">Galería</h2>
         <div class="pgallery">
-          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
-          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.capture">Captura pendiente</span></div>
+          <img src="../assets/img/FlammyJim/Gallery_0.png" alt="Flammy Jim">
+          <img src="../assets/img/FlammyJim/Gallery_1.png" alt="Flammy Jim">
+          <img src="../assets/img/FlammyJim/Gallery_2.png" alt="Flammy Jim">
         </div>
       </section>
 
@@ -105,7 +121,7 @@
         <h2 data-i18n="common.section.links">Enlaces</h2>
         <p><em data-i18n="fj.links.note">El repositorio de este proyecto es privado por ahora.</em></p>
         <div class="plinks">
-          <a href="https://kath-4.itch.io/" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
+          <a href="https://kath-4.itch.io/flammy-jim" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
         </div>
       </section>
 
@@ -117,6 +133,7 @@
 
 <script src="../js/i18n.js"></script>
 <script src="../js/theme.js"></script>
+<script src="../js/lightbox.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

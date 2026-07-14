@@ -26,18 +26,20 @@ const translations = {
   'common.infobar.status':   { es: 'Estado', en: 'Status' },
   'common.infobar.role':     { es: 'Mi rol', en: 'My role' },
   'common.infobar.duration': { es: 'Duración', en: 'Duration' },
+  'common.infobar.theme':    { es: 'Tema', en: 'Theme' },
   'common.infobar.type':     { es: 'Tipo', en: 'Type' },
   'common.infobar.genre':    { es: 'Género', en: 'Genre' },
   'common.infobar.area':     { es: 'Área', en: 'Area' },
   'common.media.pending':  { es: 'Imagen pendiente', en: 'Image pending' },
   'common.media.capture':  { es: 'Captura pendiente', en: 'Screenshot pending' },
+  'common.media.video':    { es: 'Video pendiente', en: 'Video pending' },
   'common.btn.itch':  { es: 'Ver en itch.io', en: 'View on itch.io' },
   'common.btn.repo':  { es: 'Ver repositorio', en: 'View repository' },
   'common.sena.intern': { es: 'SENA — Etapa productiva', en: 'SENA — Internship' },
   'common.theme.toggle': { es: 'Cambiar a modo oscuro', en: 'Switch to dark mode' },
 
   // ---------- INDEX — Hero ----------
-  'idx.hero.tag':   { es: 'Ficha de perfil — activo', en: 'Profile file — active' },
+  'idx.hero.tag':   { es: 'Ficha de perfil', en: 'Profile file' },
   'idx.hero.desc':  {
     es: 'Diseño y desarrollo experiencias jugables donde la narrativa y la mecánica se ponen a prueba mutuamente. Formándome como Unity Developer con Generation Colombia, con foco en diseño narrativo, diseño de niveles y sistemas de juego.',
     en: 'I design and develop playable experiences where narrative and mechanics test each other. Training as a Unity Developer with Generation Colombia, focused on narrative design, level design and game systems.'
@@ -54,8 +56,8 @@ const translations = {
     en: 'I\'m Laura, a game designer and developer with a background in multimedia production. I\'m taking the Unity Developer bootcamp at Generation Colombia, sharpening technical tools I already sensed from visual design: composition, pacing, and how to guide someone\'s attention through a space.'
   },
   'idx.about.p2': {
-    es: 'Me interesa particularmente el diseño narrativo y el diseño de niveles, sobre todo en juegos de plataformas y de inspección: espacios y sistemas donde cada mecánica cuenta algo sobre el mundo que representa. He explorado esto en distintos proyectos de game jam, combinando puzzles de deducción con narrativa ambiental.',
-    en: 'I\'m particularly interested in narrative design and level design, especially in platformers and inspection games: spaces and systems where every mechanic says something about the world it represents. I\'ve explored this across different game jam projects, combining deduction puzzles with environmental narrative.'
+    es: 'Me interesa particularmente el diseño narrativo, el diseño de UI y el diseño de niveles, sobre todo en juegos de plataformas y de inspección: espacios y sistemas donde cada mecánica cuenta algo sobre el mundo que representa. He explorado esto en distintos proyectos de game jam, combinando puzzles de deducción con narrativa ambiental.',
+    en: 'I\'m particularly interested in narrative design, UI design and level design, especially in platformers and inspection games: spaces and systems where every mechanic says something about the world it represents. I\'ve explored this across different game jam projects, combining deduction puzzles with environmental narrative.'
   },
   'idx.about.p3': {
     es: 'Vengo del branding y la ilustración digital, así que cuido tanto la lógica de un sistema como la piel visual que lo comunica.',
@@ -70,9 +72,13 @@ const translations = {
   'idx.portfolio.title':   { es: 'Proyectos bajo inspección', en: 'Projects under inspection' },
   'idx.portfolio.desc':    { es: 'Una selección de trabajo en videojuegos y en diseño visual. Cada ficha lleva a un informe completo del proceso.', en: 'A selection of game and visual design work. Each file leads to a full report of the process.' },
   'idx.portfolio.games.title':  { es: 'Videojuegos', en: 'Games' },
-  'idx.portfolio.games.count':  { es: '02 proyectos', en: '2 projects' },
+  'idx.portfolio.games.count':  { es: '03 proyectos', en: '3 projects' },
   'idx.portfolio.design.title': { es: 'Diseño', en: 'Design' },
   'idx.portfolio.design.count': { es: '02 proyectos', en: '2 projects' },
+
+  'idx.card.tds.meta':  { es: '2026 · You Really Shouldn\'t Mix Those Game Jam', en: '2026 · You Really Shouldn\'t Mix Those Game Jam' },
+  'idx.card.tds.desc':  { es: 'Juego de terror en primera persona: purifica dos mitades opuestas de una criatura híbrida entre pesadilla y sueño antes de que consuma al niño que sueña.', en: 'A first-person horror game: purify two opposing halves of a nightmare-dream hybrid creature before it consumes the dreaming child.' },
+  'idx.card.tds.stamp': { es: 'Finalizado', en: 'Finished' },
 
   'idx.card.tp.meta':  { es: '2026 · Game Jam MadeToBePlayed', en: '2026 · MadeToBePlayed Game Jam' },
   'idx.card.tp.desc':  { es: 'Juego de inspección y memoria en primera persona creado para la Game Jam MadeToBePlayed. El jugador es el degustador de un restaurante y debe identificar qué combinaciones de ingredientes son tóxicas antes de servir cada plato.', en: 'A first-person inspection and memory game made for the MadeToBePlayed Game Jam. The player is a restaurant\'s taster, tasked with identifying which ingredient combinations are toxic before each dish is served.' },
@@ -82,12 +88,12 @@ const translations = {
   'idx.card.fj.desc':  { es: 'Un endless flyer estilo Flappy Bird, construido a partir de un tutorial y reimaginado con una flama como protagonista y estalactitas de hielo como obstáculos. Sigue recibiendo actualizaciones.', en: 'A Flappy Bird-style endless flyer, built from a tutorial and reimagined with a little flame as the main character and ice stalactites as obstacles. Still receiving updates.' },
   'idx.card.fj.stamp': { es: 'En desarrollo', en: 'In development' },
 
-  'idx.card.epr.meta':  { es: 'Concept art · Preproducción VR 180°', en: 'Concept art · VR 180° pre-production' },
+  'idx.card.epr.meta':  { es: '2025 · Concept art · Preproducción VR 180°', en: '2025 · Concept art · VR 180° pre-production' },
   'idx.card.epr.desc':  { es: 'Concept art para un proyecto audiovisual en VR 180° que recrea, desde la mirada de un niño, la huelga obrera de 1963 en la cementera El Cairo, Santa Bárbara, Antioquia. Adaptación narrativa de "Las Cruces Sobre el Agua", de Joaquín Gallegos Lara.', en: 'Concept art for a VR 180° audiovisual project that recreates, through a child\'s eyes, the 1963 workers\' strike at the El Cairo cement plant in Santa Bárbara, Antioquia. A narrative adaptation of "Las Cruces Sobre el Agua" by Joaquín Gallegos Lara.' },
   'idx.card.epr.stamp': { es: 'Finalizado', en: 'Finished' },
 
-  'idx.card.notco.meta':  { es: 'SENA · Reto de programación', en: 'SENA · Coding challenge' },
-  'idx.card.notco.desc':  { es: 'Sitio web para el ingreso de NotCo a Colombia, desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA. Gané el reto por la implementación de la imagen de marca.', en: 'A website for NotCo\'s entry into Colombia, built during a 2–3 day coding challenge as part of my elective stage at SENA. I won the challenge for the brand implementation.' },
+  'idx.card.notco.meta':  { es: '2023 · SENA · Reto de programación', en: '2023 · SENA · Coding challenge' },
+  'idx.card.notco.desc':  { es: 'Sitio web que tomaba como reto una situación hipotética de la llegada de NotCo a Colombia, desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA. Gané el reto impuesto por la instructora por la implementación de la imagen de marca.', en: 'A website built around the hypothetical scenario of NotCo entering Colombia, developed during a 2–3 day coding challenge as part of my elective stage at SENA. I won the challenge set by the instructor for the brand implementation.' },
   'idx.card.notco.stamp': { es: 'Ganador del reto', en: 'Challenge winner' },
 
   // ---------- INDEX — CV ----------
@@ -101,6 +107,7 @@ const translations = {
   'idx.cv.soft.li2': { es: 'Comunicación técnica en inglés en contextos de IT', en: 'Technical communication in English in IT contexts' },
   'idx.cv.soft.li3': { es: 'Resolución de problemas y pensamiento de sistemas', en: 'Problem solving and systems thinking' },
   'idx.cv.edu.title': { es: 'Formación', en: 'Education' },
+  'idx.cv.edu.e1.title':  { es: 'Bootcamp en Desarrollo en Unity', en: 'Unity Development Bootcamp' },
   'idx.cv.edu.e1.status': { es: 'En curso', en: 'Ongoing' },
   'idx.cv.edu.e2.title': { es: 'Técnico en Producción Multimedia', en: 'Multimedia Production Technician' },
   'idx.cv.edu.e2.desc':  { es: 'Comunicación, diseño y desarrollo multimedia.', en: 'Communication, design and multimedia development.' },
@@ -112,18 +119,18 @@ const translations = {
 
   // ---------- INDEX — Contact ----------
   'idx.contact.eyebrow': { es: 'FILE_04 — Contacto', en: 'FILE_04 — Contact' },
-  'idx.contact.title':   { es: '¿Trabajamos en un jam, un juego, o algo entre ambos?', en: 'Want to work on a jam, a game, or something in between?' },
-  'idx.contact.desc':    { es: 'Estoy abierta a colaboraciones, procesos de selección y proyectos de game jam. Escríbeme y te respondo pronto.', en: 'I\'m open to collaborations, hiring processes and game jam projects. Send me a message and I\'ll get back to you soon.' },
+  'idx.contact.title':   { es: '¿Deseas trabajar conmigo?', en: 'Want to work together?' },
+  'idx.contact.desc':    { es: 'Estoy abierta a colaboraciones, procesos de selección y proyectos de game jam. ¡Escríbeme!', en: 'I\'m open to collaborations, hiring processes and game jam projects. Send me a message!' },
   'idx.contact.btn.email':    { es: 'Escribir correo', en: 'Send an email' },
   'idx.contact.btn.linkedin': { es: 'Ver LinkedIn', en: 'View LinkedIn' },
 
   // ---------- TOXIC DELICACIES ----------
   'tp.stamp.status': { es: 'Finalizado', en: 'Finished' },
   'tp.lede': { es: 'Un juego de inspección y memoria en primera persona: eres el degustador de un restaurante y debes descubrir qué combinaciones —no ingredientes— convierten un plato en veneno.', en: 'A first-person inspection and memory game: you\'re a restaurant\'s taster, and you must discover which combinations — not ingredients — turn a dish into poison.' },
-  'tp.info.status':   { es: 'Finalizado (game jam)', en: 'Finished (game jam)' },
+  'tp.info.status':   { es: 'Publicado', en: 'Released' },
   'tp.info.role':     { es: 'Arte de assets y diseño de juego', en: 'Asset art & game design' },
-  'tp.info.duration': { es: 'Game Jam MadeToBePlayed (25 jun – 5 jul 2026)', en: 'MadeToBePlayed Game Jam (Jun 25 – Jul 5, 2026)' },
-  'tp.desc.p1': { es: 'Toxic Delicacies se desarrolló para MadeToBePlayed, la game jam organizada por MintMood entre el 25 de junio y el 5 de julio de 2026. El tema revelado fue "tóxico". Lo desarrollamos en equipo: Jorge Horta y Mónica Juarez en programación, Jabnel Bobadilla y Esteban Romero en arte, Valentina Castrillon en arte y UI/UX, y yo en arte de assets y diseño de juego.', en: 'Toxic Delicacies was developed for MadeToBePlayed, the game jam organized by MintMood between June 25 and July 5, 2026. The revealed theme was "toxic". We built it as a team: Jorge Horta and Mónica Juarez on programming, Jabnel Bobadilla and Esteban Romero on art, Valentina Castrillon on art and UI/UX, and me on asset art and game design.' },
+  'tp.info.theme':    { es: 'Toxic', en: 'Toxic' },
+  'tp.desc.p1': { es: 'Toxic Delicacies se desarrolló para MadeToBePlayed, la game jam organizada por MintMood entre el 25 de junio y el 5 de julio de 2026. El tema revelado fue "tóxico". Lo desarrollamos en equipo: Jorge Horta y Mónica Juarez en programación, Jabnel Bobadilla y Esteban Romero en arte, Valentina Castrillon en diseño UI, y yo en arte de assets y diseño de juego.', en: 'Toxic Delicacies was developed for MadeToBePlayed, the game jam organized by MintMood between June 25 and July 5, 2026. The revealed theme was "toxic". We built it as a team: Jorge Horta and Mónica Juarez on programming, Jabnel Bobadilla and Esteban Romero on art, Valentina Castrillon on UI design, and me on asset art and game design.' },
   'tp.desc.p2': { es: 'La narrativa cambió bastante durante el desarrollo: empezamos con un mundo post-apocalíptico y terminamos en algo más ligero y concreto — el jugador es el degustador de un restaurante, encargado de probar cada plato antes de que llegue a los comensales. El problema de diseño central se mantuvo intacto durante todo ese cambio: evitar la solución obvia de "ingredientes buenos vs. ingredientes malos". La toxicidad surge de la combinación, no del ingrediente en sí — cada plato es un pequeño rompecabezas de memoria y deducción.', en: 'The narrative shifted quite a bit during development: we started with a post-apocalyptic world and landed on something lighter and more concrete — the player is a restaurant\'s taster, in charge of testing each dish before it reaches the diners. The core design problem stayed intact through that whole change: avoiding the obvious "good ingredients vs. bad ingredients" solution. Toxicity comes from the combination, not the ingredient itself — each dish is a small memory and deduction puzzle.' },
   'tp.desc.p3': { es: 'El público objetivo son jugadores de juegos de inspección y narrativa ligera, interesados en mecánicas de puzzle contemplativas más que en reflejos o acción.', en: 'The target audience is players of inspection games and light narrative, more interested in contemplative puzzle mechanics than in reflexes or action.' },
   'tp.process.1.title': { es: 'Interpretar el tema del jam', en: 'Interpreting the jam theme' },
@@ -141,7 +148,7 @@ const translations = {
   'tp.team.role.monica':    { es: 'Programación', en: 'Programming' },
   'tp.team.role.jabnel':    { es: 'Arte de escenarios', en: 'Environment art' },
   'tp.team.role.esteban':   { es: 'Arte de assets', en: 'Asset art' },
-  'tp.team.role.valentina': { es: 'Arte y programación UI/UX', en: 'UI/UX art & programming' },
+  'tp.team.role.valentina': { es: 'Diseño UI', en: 'UI design' },
   'tp.team.role.laura':     { es: 'Arte de assets y diseño de juego', en: 'Asset art & game design' },
   'tp.challenges.title': { es: 'Retos y aprendizajes', en: 'Challenges & learnings' },
   'tp.challenges.p': { es: 'El mayor reto fue balancear la complejidad del sistema de combinaciones para que se sintiera como un misterio resoluble y no como memorización arbitraria. A eso se sumó coordinar a seis personas en roles distintos dentro de los diez días del jam, incluyendo el giro narrativo a mitad de camino — mantener el GDD como documento vivo fue clave para que todo el equipo avanzara alineado pese al cambio.', en: 'The biggest challenge was balancing the complexity of the combination system so it felt like a solvable mystery rather than arbitrary memorization. On top of that, coordinating six people across different roles within the jam\'s ten days, including the narrative pivot midway through — keeping the GDD as a living document was key to keeping the whole team aligned despite the change.' },
@@ -149,8 +156,8 @@ const translations = {
   // ---------- FLAMMY JIM ----------
   'fj.stamp.status': { es: 'En desarrollo', en: 'In development' },
   'fj.lede': { es: 'Un endless flyer propio construido a partir de un tutorial, con una flama como protagonista, estalactitas de hielo como obstáculos, y una mecánica diferenciadora todavía por llegar.', en: 'An original endless flyer built from a tutorial, with a little flame as the main character, ice stalactites as obstacles, and a differentiating mechanic still on the way.' },
-  'fj.info.type':   { es: 'Proyecto personal', en: 'Personal project' },
-  'fj.info.status': { es: 'Jugable — en desarrollo continuo', en: 'Playable — ongoing development' },
+  'fj.info.year':   { es: '2026', en: '2026' },
+  'fj.info.status': { es: 'En desarrollo', en: 'In development' },
   'fj.info.role':   { es: 'Diseño, arte y programación', en: 'Design, art and programming' },
   'fj.desc.p1a': { es: 'Flammy Jim nació como ejercicio práctico a partir de ', en: 'Flammy Jim started as a practical exercise based on ' },
   'fj.desc.p1b': { es: ', para aterrizar en un proyecto pequeño el ciclo completo de diseño, arte y programación. Sobre esa base técnica, lo reimaginé visualmente: en vez de un pájaro, una pequeña flama; en vez de tubos, estalactitas de hielo.', en: ', as a way to land the full design, art and programming cycle in one small project. On top of that technical base, I reimagined it visually: instead of a bird, a little flame; instead of pipes, ice stalactites.' },
@@ -168,7 +175,7 @@ const translations = {
   // ---------- EL PRECIO DE RESISTIR ----------
   'epr.stamp.status': { es: 'Finalizado', en: 'Finished' },
   'epr.lede': { es: 'Concept art de un proyecto audiovisual en VR 180° que recrea, desde la mirada de un niño, la huelga obrera de 1963 en la cementera El Cairo, Santa Bárbara, Antioquia.', en: 'Concept art for a VR 180° audiovisual project that recreates, through a child\'s eyes, the 1963 workers\' strike at the El Cairo cement plant in Santa Bárbara, Antioquia.' },
-  'epr.info.type':   { es: 'Concept art · Preproducción VR 180°', en: 'Concept art · VR 180° pre-production' },
+  'epr.info.year':   { es: '2025', en: '2025' },
   'epr.info.status': { es: 'Finalizado', en: 'Finished' },
   'epr.info.role':   { es: 'Dirección de proyecto, investigación y narrativa', en: 'Project direction, research and narrative' },
   'epr.info.area':   { es: 'Memoria histórica / concept art', en: 'Historical memory / concept art' },
@@ -195,15 +202,43 @@ const translations = {
 
   // ---------- NOTCO WEB ----------
   'notco.stamp.status': { es: 'Ganador del reto', en: 'Challenge winner' },
-  'notco.lede': { es: 'Sitio web desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA, para presentar la llegada de NotCo a Colombia con un toque local.', en: 'A website built during a 2–3 day coding challenge as part of my elective stage at SENA, to present NotCo\'s arrival in Colombia with a local touch.' },
-  'notco.info.type':   { es: 'Reto de programación — SENA', en: 'Coding challenge — SENA' },
-  'notco.info.status': { es: 'Publicado — ganador del reto', en: 'Published — challenge winner' },
+  'notco.lede': { es: 'Sitio web desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA, para presentar la llegada de NotCo a Colombia de forma hipotética con un toque local.', en: 'A website built during a 2–3 day coding challenge as part of my elective stage at SENA, presenting NotCo\'s hypothetical arrival in Colombia with a local touch.' },
+  'notco.info.year':   { es: '2023', en: '2023' },
+  'notco.info.status': { es: 'Publicado', en: 'Published' },
   'notco.info.role':   { es: 'Programación e implementación web', en: 'Web programming & implementation' },
   'notco.info.area':   { es: 'Desarrollo web', en: 'Web development' },
-  'notco.desc.p1': { es: 'Este proyecto surgió como un reto de programación durante mi etapa electiva en el SENA: en 2-3 días, debíamos desarrollar el sitio web de una marca que llegaba a Colombia — en este caso, NotCo — implementando el producto con un toque de sabor colombiano.', en: 'This project came out of a coding challenge during my elective stage at SENA: in 2–3 days, we had to build the website for a brand entering Colombia — in this case, NotCo — giving the product a Colombian flavor.' },
-  'notco.desc.p2': { es: 'Trabajé en equipo con dos compañeros que se encargaron de algunas piezas gráficas; yo me encargué de toda la programación e implementación del sitio. Por la limitación de tiempo, el sitio no cuenta con diseño responsive — no alcanzamos a cubrirlo dentro del reto.', en: 'I worked with two teammates who handled some of the graphic pieces; I was responsible for all the programming and implementation of the site. Due to the time limit, the site isn\'t responsive — we didn\'t manage to cover that within the challenge.' },
-  'notco.desc.p3': { es: 'Fuimos reconocidas como ganadoras del reto por la buena implementación web de la imagen de marca de NotCo.', en: 'We were recognized as winners of the challenge for the strong web implementation of NotCo\'s brand image.' },
+  'notco.desc.p1': { es: 'Este proyecto surgió como un reto de programación durante mi etapa electiva en el SENA: en 2-3 días, debíamos desarrollar el sitio web de una marca que llegaba a Colombia, en este caso, NotCo, implementando el producto con un toque de sabor colombiano.', en: 'This project came out of a coding challenge during my elective stage at SENA: in 2–3 days, we had to build the website for a brand entering Colombia — in this case, NotCo — giving the product a Colombian flavor.' },
+  'notco.desc.p2': { es: 'Trabajé en equipo con dos compañeros que se encargaron de algunas piezas gráficas; yo me encargué de toda la programación, algunas piezas gráficas y la implementación del sitio. Por la limitación de tiempo, el sitio no cuenta con diseño responsive, no alcanzamos a cubrirlo dentro del reto.', en: 'I worked with two teammates who handled some of the graphic pieces; I was responsible for all the programming, some of the graphic pieces, and the implementation of the site. Due to the time limit, the site isn\'t responsive — we didn\'t manage to cover that within the challenge.' },
+  'notco.desc.p3': { es: 'Fuimos reconocidos como ganadores del reto por la buena implementación web de la imagen de marca de NotCo.', en: 'We were recognized as winners of the challenge for the strong web implementation of NotCo\'s brand image.' },
   'notco.links.live': { es: 'Ver sitio en vivo', en: 'View live site' },
+
+  // ---------- THE DREAM STALKER ----------
+  'tds.stamp.status': { es: 'Finalizado', en: 'Finished' },
+  'tds.lede': { es: 'Un juego de terror en primera persona ambientado en el sueño fracturado de un niño: debes purificar dos mitades opuestas de una criatura antes de que la pesadilla lo consuma.', en: 'A first-person horror game set inside a child\'s fractured dream: you must purify two opposing halves of a creature before the nightmare consumes them.' },
+  'tds.info.status':   { es: 'Publicado', en: 'Released' },
+  'tds.info.role':     { es: 'Diseño de narrativa, diseño UI y documentación', en: 'Narrative design, UI design and documentation' },
+  'tds.info.theme':    { es: 'You Really Shouldn\'t Mix Those Game Jam', en: 'You Really Shouldn\'t Mix Those Game Jam' },
+  'tds.desc.p1': { es: 'The Dream Stalker es un juego de terror en primera persona ambientado dentro del sueño fracturado de un niño. El jugador es un guardián encargado de separar y purificar dos mitades opuestas de una criatura híbrida entre pesadilla y sueño, mientras es acechado por Mothroach: una mezcla entre las fobias más comunes a los insectos y la apariencia engañosamente inofensiva de una polilla bebé.', en: 'The Dream Stalker is a first-person horror game set inside a child\'s fractured dream. The player is a guardian tasked with separating and purifying two opposing halves of a nightmare-dream hybrid creature, while being stalked by Mothroach: a blend of common insect phobias and the deceptively harmless look of a baby moth.' },
+  'tds.desc.p2': { es: 'Para lograrlo hay que recolectar baterías para la linterna y mantener a la criatura a raya mientras se resuelve el misterio de sus dos fragmentos, con el objetivo de sanar el sueño y salvar al niño antes de que la pesadilla lo consuma por completo.', en: 'To do this, you must scavenge flashlight batteries and keep the creature at bay while unraveling the mystery of its two fragments, aiming to heal the dream and save the child before the nightmare fully consumes them.' },
+  'tds.desc.p3': { es: 'Se desarrolló para la "You Really Shouldn\'t Mix Those Game Jam" y ya está publicado, disponible para jugar directamente en el navegador (WebGL) a través de itch.io. Está pensado para jugadores de game jams y fans del terror ligero con elementos de puzzle.', en: 'It was developed for the "You Really Shouldn\'t Mix Those Game Jam" and is already published, playable directly in the browser (WebGL) via itch.io. It\'s aimed at game jam players and fans of light horror with puzzle elements.' },
+  'tds.process.1.title': { es: 'El HUD, desde el primer día', en: 'The HUD, from day one' },
+  'tds.process.1.body': { es: 'Durante los tres primeros días del jam desarrollé el HUD completo y todos sus scripts, mientras el resto del equipo avanzaba en paralelo con el movimiento en primera persona, la linterna y la IA del enemigo (patrullar → perseguir → separar → purificar).', en: 'During the jam\'s first three days I built the entire HUD and all of its scripts, while the rest of the team worked in parallel on first-person movement, the flashlight, and the enemy AI (patrol → chase → split → purify).' },
+  'tds.process.2.title': { es: 'Menú principal', en: 'Main menu' },
+  'tds.process.2.body': { es: 'Con el mapa principal y el HUD ya en pie, diseñé e implementé el menú principal del juego.', en: 'With the main map and HUD already in place, I designed and implemented the game\'s main menu.' },
+  'tds.process.3.title': { es: 'Documentación viva', en: 'Living documentation' },
+  'tds.process.3.body': { es: 'En paralelo al desarrollo, mantuve actualizado el GDD base en Word, para que el equipo tuviera siempre una referencia clara de las decisiones de diseño a medida que avanzaba el jam.', en: 'Alongside development, I kept the base GDD updated in Word, so the team always had a clear reference for design decisions as the jam progressed.' },
+  'tds.process.4.title': { es: 'Pantallas de victoria y derrota', en: 'Win and lose screens' },
+  'tds.process.4.body': { es: 'Diseñé e implementé las pantallas de victoria y derrota, cerrando el ciclo de feedback del jugador.', en: 'I designed and implemented the win and lose screens, closing the player feedback loop.' },
+  'tds.process.5.title': { es: 'Integración final en Unity', en: 'Final integration in Unity' },
+  'tds.process.5.body': { es: 'Integré todos estos elementos —HUD, menú, pantallas de fin de partida y una ventana de créditos— dentro de Unity mediante scripts, como parte del pulido general del proyecto (efectos de sonido, música y menús).', en: 'I integrated all of these elements — HUD, menu, end-game screens and a credits window — into Unity through scripts, as part of the project\'s overall polish (sound effects, music and menus).' },
+  'tds.process.6.title': { es: 'Cierre: GDD y pitch', en: 'Wrap-up: GDD and pitch' },
+  'tds.process.6.body': { es: 'El último día del jam me encargué del diseño final del GDD y del pitch usado para presentar el proyecto, coincidiendo con su publicación el 10 de julio de 2026.', en: 'On the jam\'s last day I handled the final design of the GDD and the pitch used to present the project, coinciding with its release on July 10, 2026.' },
+  'tds.team.title': { es: 'Equipo', en: 'Team' },
+  'tds.team.role.norajulia': { es: 'Programación', en: 'Programming' },
+  'tds.team.role.dyenome':   { es: 'Arte 3D / Programación', en: '3D art / Programming' },
+  'tds.team.role.mgilford':  { es: 'Programación', en: 'Programming' },
+  'tds.team.role.laura':     { es: 'Diseño UI / Documentación', en: 'UI design / Documentation' },
+  'tds.links.gdd': { es: 'Ver GDD', en: 'View GDD' },
 };
 
 const LANG_KEY = 'laura-portfolio-lang';

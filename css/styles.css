@@ -1,7 +1,7 @@
 /* ============================================================
    LAURA ROJAS — PORTFOLIO
    Dirección visual: "informe de inspección"
-   Inspirado en Toxic Delicacies: fichas de evidencia, sellos de
+   Estilo: fichas de evidencia, sellos de
    estado, franjas de peligro para contenido pendiente.
    ============================================================ */
 
@@ -462,8 +462,36 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 
 /* ---------- Section shell ---------- */
 .section { padding: 110px 0; border-top: 1px solid var(--line); }
-.section__head { max-width: 640px; margin-bottom: 56px; }
+.section__head { max-width: 640px; margin-bottom: 50px; }
 .section__head p { color: var(--ink-soft); font-size: 1.05rem; margin-top: 10px; }
+
+
+.about__head {
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.about__head-text { flex: 1 1 380px; max-width: 640px;}
+.about__photo-lg {
+  flex: 0 0 auto;
+  width: 190px;
+}
+.about__photo-lg img,
+.about__photo-lg .media-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  transform: rotate(-3deg);
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 640px) {
+  .about__photo-lg { width: 140px; }
+}
 
 /* ---------- About ---------- */
 .about__grid {
@@ -739,9 +767,67 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 .pheader__lede { max-width: 640px; color: var(--ink-soft); font-size: 1.1rem; }
 .pheader__stamps { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
 
+/* ============================================================
+   HEADER CON VIDEO (layout de dos columnas)
+   ============================================================ */
+.pheader__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 44px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .pheader__grid { grid-template-columns: 1fr; gap: 32px; }
+}
+.pheader__media { width: 100%; }
+
+/* Envoltorio responsive para un iframe/video real (relación 16:9) */
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.video-embed iframe,
+.video-embed video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Placeholder mientras no hay video (misma familia visual que .media-placeholder) */
+.video-placeholder {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background: repeating-linear-gradient(135deg, var(--bg-alt) 0 12px, var(--stripe) 12px 24px);
+  opacity: 0.55;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.video-placeholder__icon { width: 32px; height: 32px; color: var(--ink); }
+.video-placeholder__label {
+  background: var(--bg);
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+
 .infobar {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 0.35fr 0.9fr 1.3fr 1.3fr;
   gap: 24px;
   margin-top: 46px;
   padding-top: 30px;
@@ -768,6 +854,8 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 .pbody__section p { color: var(--ink-soft); font-size: 1.03rem; margin: 0 0 16px; }
 .pbody__section p:last-child { margin-bottom: 0; }
 
+.pbody__section--wide { max-width: none; }
+
 .process-list { list-style: none; margin: 0; padding: 0; }
 .process-list li {
   position: relative;
@@ -791,11 +879,65 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 
 .pgallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 18px;
 }
 .pgallery .media-placeholder { border: 1px solid var(--line); border-radius: var(--radius); }
-@media (max-width: 700px) { .pgallery { grid-template-columns: 1fr; } }
+.pgallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+}
+.pgallery img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -16px rgba(32, 29, 26, 0.4);
+}
+
+/* LIGHTBOX — vista ampliada de imágenes de galería */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 9, 7, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.lightbox-overlay.is-open { opacity: 1; pointer-events: auto; }
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+}
+.lightbox-overlay__close {
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(247, 244, 236, 0.7);
+  background: transparent;
+  color: #F7F4EC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.lightbox-overlay__close:hover { background: rgba(247, 244, 236, 0.15); }
+.lightbox-overlay__close svg { width: 18px; height: 18px; }
 
 .plinks { display: flex; flex-wrap: wrap; gap: 14px; }
 
