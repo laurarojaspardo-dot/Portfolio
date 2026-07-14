@@ -1,14 +1,13 @@
 // ============================================================
 // LAURA ROJAS — PORTFOLIO — typewriter del hero
-// Escribe y borra cada rol en bucle: Game Developer / Game
-// Designer / Level Designer. Respeta prefers-reduced-motion.
+// Escribe y borra cada rol en bucle.
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', () => {
   const el = document.getElementById('typedRole');
   if (!el) return;
 
-  const roles = ['Game Developer', 'Game Designer', 'Level Designer'];
+  const roles = ['Game Developer', 'Game Designer', 'UI Designer', 'Level Designer'];
   const cursor = document.querySelector('.typed-cursor');
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
