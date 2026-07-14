@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // El nav permanece siempre visible y fijo (sin comportamiento de ocultado).
+  // Nav fijo.
 
   // Resaltar sección activa (solo en landing, donde hay secciones con id)
   const sections = document.querySelectorAll('main section[id]');
