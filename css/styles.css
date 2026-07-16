@@ -64,6 +64,16 @@ body {
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
+/* Color de selección de texto, acorde a la paleta violeta del sitio */
+::selection {
+  background: var(--violet);
+  color: var(--bg);
+}
+::-moz-selection {
+  background: var(--violet);
+  color: var(--bg);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
@@ -938,6 +948,32 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 }
 .lightbox-overlay__close:hover { background: rgba(247, 244, 236, 0.15); }
 .lightbox-overlay__close svg { width: 18px; height: 18px; }
+
+.lightbox-overlay__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(247, 244, 236, 0.7);
+  background: rgba(10, 9, 7, 0.4);
+  color: #F7F4EC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.lightbox-overlay__nav:hover { background: rgba(247, 244, 236, 0.18); }
+.lightbox-overlay__nav svg { width: 22px; height: 22px; }
+.lightbox-overlay__nav--prev { left: 18px; }
+.lightbox-overlay__nav--next { right: 18px; }
+@media (max-width: 640px) {
+  .lightbox-overlay__nav { width: 40px; height: 40px; }
+  .lightbox-overlay__nav--prev { left: 8px; }
+  .lightbox-overlay__nav--next { right: 8px; }
+}
 
 .plinks { display: flex; flex-wrap: wrap; gap: 14px; }
 

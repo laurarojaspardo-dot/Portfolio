@@ -22,6 +22,7 @@ const translations = {
   'common.section.skills':     { es: 'Habilidades demostradas', en: 'Skills demonstrated' },
   'common.section.gallery':    { es: 'Galería', en: 'Gallery' },
   'common.section.links':      { es: 'Enlaces', en: 'Links' },
+  'common.section.challenges': { es: 'Desafíos y aprendizajes', en: 'Challenges & learnings' },
   'common.infobar.year':     { es: 'Año', en: 'Year' },
   'common.infobar.status':   { es: 'Estado', en: 'Status' },
   'common.infobar.role':     { es: 'Mi rol', en: 'My role' },
@@ -41,8 +42,8 @@ const translations = {
   // ---------- INDEX — Hero ----------
   'idx.hero.tag':   { es: 'Ficha de perfil', en: 'Profile file' },
   'idx.hero.desc':  {
-    es: 'Diseño y desarrollo experiencias jugables donde la narrativa y la mecánica se ponen a prueba mutuamente. Formándome como Unity Developer con Generation Colombia, con foco en diseño narrativo, diseño de niveles y sistemas de juego.',
-    en: 'I design and develop playable experiences where narrative and mechanics test each other. Training as a Unity Developer with Generation Colombia, focused on narrative design, level design and game systems.'
+    es: 'Diseño y desarrollo experiencias jugables donde la narrativa y la mecánica se ponen a prueba mutuamente. Formándome como Unity Developer con Generation Colombia, con foco en diseño narrativo, diseño de UI/UX y sistemas de juego.',
+    en: 'I design and develop playable experiences where narrative and mechanics test each other. Training as a Unity Developer with Generation Colombia, focused on narrative design, UI/UX design and game systems.'
   },
   'idx.hero.scroll': { es: 'Desplázate', en: 'Scroll' },
   'idx.hero.spotlight.meta':  { es: '2026 · Finalizado', en: '2026 · Completed' },
@@ -94,7 +95,7 @@ const translations = {
 
   'idx.card.notco.meta':  { es: '2023 · SENA · Reto de programación', en: '2023 · SENA · Coding challenge' },
   'idx.card.notco.desc':  { es: 'Sitio web que tomaba como reto una situación hipotética de la llegada de NotCo a Colombia, desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA. Gané el reto impuesto por la instructora por la implementación de la imagen de marca.', en: 'A website built around the hypothetical scenario of NotCo entering Colombia, developed during a 2–3 day coding challenge as part of my elective stage at SENA. I won the challenge set by the instructor for the brand implementation.' },
-  'idx.card.notco.stamp': { es: 'Ganador del reto', en: 'Challenge winner' },
+  'idx.card.notco.stamp': { es: 'Finalizado', en: 'Finished' },
 
   // ---------- INDEX — CV ----------
   'idx.cv.eyebrow': { es: 'FILE_03 — CV', en: 'FILE_03 — Resume' },
@@ -150,8 +151,7 @@ const translations = {
   'tp.team.role.esteban':   { es: 'Arte de assets', en: 'Asset art' },
   'tp.team.role.valentina': { es: 'Diseño UI', en: 'UI design' },
   'tp.team.role.laura':     { es: 'Arte de assets y diseño de juego', en: 'Asset art & game design' },
-  'tp.challenges.title': { es: 'Retos y aprendizajes', en: 'Challenges & learnings' },
-  'tp.challenges.p': { es: 'El mayor reto fue balancear la complejidad del sistema de combinaciones para que se sintiera como un misterio resoluble y no como memorización arbitraria. A eso se sumó coordinar a seis personas en roles distintos dentro de los diez días del jam, incluyendo el giro narrativo a mitad de camino — mantener el GDD como documento vivo fue clave para que todo el equipo avanzara alineado pese al cambio.', en: 'The biggest challenge was balancing the complexity of the combination system so it felt like a solvable mystery rather than arbitrary memorization. On top of that, coordinating six people across different roles within the jam\'s ten days, including the narrative pivot midway through — keeping the GDD as a living document was key to keeping the whole team aligned despite the change.' },
+  'tp.challenges.p': { es: 'El principal reto fue crear pixel art con una estética mucho más creativa y alejada de lo convencional, diseñando platillos mutados con una apariencia posapocalíptica. Para generar ideas exploré distintas propuestas utilizando prompts en Gemini enfocados en el diseño conceptual de alimentos, y a partir de esas referencias desarrollé las versiones finales en pixel art, adaptándolas al estilo visual del juego. Este proceso fortaleció mi capacidad para transformar ideas conceptuales en recursos visuales coherentes con la dirección artística del proyecto.', en: 'The main challenge was creating pixel art with a much more creative aesthetic, far from the conventional, designing mutated dishes with a post-apocalyptic look. To generate ideas I explored different directions using Gemini prompts focused on conceptual food design, and from those references I developed the final pixel art versions, adapting them to the game\'s visual style. This process strengthened my ability to turn conceptual ideas into visual assets consistent with the project\'s art direction.' },
 
   // ---------- FLAMMY JIM ----------
   'fj.stamp.status': { es: 'En desarrollo', en: 'In development' },
@@ -171,6 +171,7 @@ const translations = {
   'fj.process.4.title': { es: 'Meta pendiente', en: 'Pending goal' },
   'fj.process.4.body': { es: 'Tengo planeada una mecánica que rompa la monotonía del loop original de "esquivar y esquivar" y diferencie el juego de un Flappy Bird estándar. Todavía no la he implementado.', en: 'I have a mechanic planned that breaks the monotony of the original "dodge and dodge" loop and sets the game apart from a standard Flappy Bird. I haven\'t implemented it yet.' },
   'fj.links.note': { es: 'El repositorio de este proyecto es privado por ahora.', en: 'This project\'s repository is private for now.' },
+  'fj.challenges.p': { es: 'Este fue mi primer acercamiento al desarrollo de videojuegos con Unity. El mayor desafío fue comprender el funcionamiento general del motor y su flujo de trabajo. Para ello seguí un tutorial estructurado que me permitió construir una base sólida sobre la cual comenzar a desarrollar proyectos propios. Gracias a esta experiencia adquirí los fundamentos necesarios para continuar aprendiendo y desarrollando videojuegos en Unity.', en: 'This was my first hands-on approach to game development with Unity. The biggest challenge was understanding how the engine and its workflow worked as a whole. To do that, I followed a structured tutorial that let me build a solid foundation to start developing my own projects from. Thanks to this experience I gained the fundamentals I needed to keep learning and developing games in Unity.' },
 
   // ---------- EL PRECIO DE RESISTIR ----------
   'epr.stamp.status': { es: 'Finalizado', en: 'Finished' },
@@ -199,9 +200,10 @@ const translations = {
   'epr.team.role.personajes':  { es: 'Ilustración de personajes', en: 'Character illustration' },
   'epr.team.role.escenarios':  { es: 'Ilustración de escenarios', en: 'Environment illustration' },
   'epr.links.book': { es: 'Ver libro de producción', en: 'View production book' },
+  'epr.challenges.p': { es: 'Uno de los mayores retos fue coordinar el trabajo del equipo mientras lideraba la adaptación de una narrativa existente sin perder su esencia. La organización, la comunicación constante y una correcta distribución de responsabilidades fueron fundamentales para lograrlo. Además, utilicé un diagrama de Gantt con todas las tareas planificadas para hacer seguimiento al avance del proyecto y mantener una gestión ordenada. Esta experiencia fortaleció mis habilidades de liderazgo, planificación y trabajo colaborativo dentro de un equipo multidisciplinario.', en: 'One of the biggest challenges was coordinating the team\'s work while leading the adaptation of an existing narrative without losing its essence. Organization, constant communication, and a clear distribution of responsibilities were essential to pulling it off. I also used a Gantt chart with all planned tasks to track the project\'s progress and keep the management organized. This experience strengthened my leadership, planning, and collaborative skills within a multidisciplinary team.' },
 
   // ---------- NOTCO WEB ----------
-  'notco.stamp.status': { es: 'Ganador del reto', en: 'Challenge winner' },
+  'notco.stamp.status': { es: 'Finalizado', en: 'Finished' },
   'notco.lede': { es: 'Sitio web desarrollado en un reto de programación de 2-3 días durante mi etapa electiva en el SENA, para presentar la llegada de NotCo a Colombia de forma hipotética con un toque local.', en: 'A website built during a 2–3 day coding challenge as part of my elective stage at SENA, presenting NotCo\'s hypothetical arrival in Colombia with a local touch.' },
   'notco.info.year':   { es: '2023', en: '2023' },
   'notco.info.status': { es: 'Publicado', en: 'Published' },
@@ -211,6 +213,7 @@ const translations = {
   'notco.desc.p2': { es: 'Trabajé en equipo con dos compañeros que se encargaron de algunas piezas gráficas; yo me encargué de toda la programación, algunas piezas gráficas y la implementación del sitio. Por la limitación de tiempo, el sitio no cuenta con diseño responsive, no alcanzamos a cubrirlo dentro del reto.', en: 'I worked with two teammates who handled some of the graphic pieces; I was responsible for all the programming, some of the graphic pieces, and the implementation of the site. Due to the time limit, the site isn\'t responsive — we didn\'t manage to cover that within the challenge.' },
   'notco.desc.p3': { es: 'Fuimos reconocidos como ganadores del reto por la buena implementación web de la imagen de marca de NotCo.', en: 'We were recognized as winners of the challenge for the strong web implementation of NotCo\'s brand image.' },
   'notco.links.live': { es: 'Ver sitio en vivo', en: 'View live site' },
+  'notco.challenges.p': { es: 'El principal desafío fue desarrollar el proyecto dentro de un tiempo muy limitado sin perder la identidad visual de la marca. Fue necesario definir cuidadosamente la estructura de las secciones, organizar la información de forma clara y mantener una interfaz consistente con la estética de NotCo. Desde el punto de vista técnico, también procuré escribir un código limpio, organizado y reutilizable, de manera que pudiera aprovechar componentes y estructuras en otras páginas similares del portafolio. Esta experiencia reforzó la importancia de planificar la arquitectura del proyecto desde el inicio para facilitar su mantenimiento y escalabilidad.', en: 'The main challenge was building the project within a very tight timeframe without losing the brand\'s visual identity. That meant carefully defining the section structure, organizing the information clearly, and keeping an interface consistent with NotCo\'s aesthetic. From a technical standpoint, I also aimed to write clean, organized, and reusable code, so I could reuse components and structures across similar pages of the portfolio. This experience reinforced the importance of planning a project\'s architecture from the start to make it easier to maintain and scale.' },
 
   // ---------- THE DREAM STALKER ----------
   'tds.stamp.status': { es: 'Finalizado', en: 'Finished' },
@@ -221,24 +224,27 @@ const translations = {
   'tds.desc.p1': { es: 'The Dream Stalker es un juego de terror en primera persona ambientado dentro del sueño fracturado de un niño. El jugador es un guardián encargado de separar y purificar dos mitades opuestas de una criatura híbrida entre pesadilla y sueño, mientras es acechado por Mothroach: una mezcla entre las fobias más comunes a los insectos y la apariencia engañosamente inofensiva de una polilla bebé.', en: 'The Dream Stalker is a first-person horror game set inside a child\'s fractured dream. The player is a guardian tasked with separating and purifying two opposing halves of a nightmare-dream hybrid creature, while being stalked by Mothroach: a blend of common insect phobias and the deceptively harmless look of a baby moth.' },
   'tds.desc.p2': { es: 'Para lograrlo hay que recolectar baterías para la linterna y mantener a la criatura a raya mientras se resuelve el misterio de sus dos fragmentos, con el objetivo de sanar el sueño y salvar al niño antes de que la pesadilla lo consuma por completo.', en: 'To do this, you must scavenge flashlight batteries and keep the creature at bay while unraveling the mystery of its two fragments, aiming to heal the dream and save the child before the nightmare fully consumes them.' },
   'tds.desc.p3': { es: 'Se desarrolló para la "You Really Shouldn\'t Mix Those Game Jam" y ya está publicado, disponible para jugar directamente en el navegador (WebGL) a través de itch.io. Está pensado para jugadores de game jams y fans del terror ligero.', en: 'It was developed for the "You Really Shouldn\'t Mix Those Game Jam" and is already published, playable directly in the browser (WebGL) via itch.io. It\'s aimed at game jam players and fans of light horror.' },
-  'tds.process.1.title': { es: 'El HUD, desde el primer día', en: 'The HUD, from day one' },
-  'tds.process.1.body': { es: 'Durante los tres primeros días del jam desarrollé el HUD completo y todos sus scripts, mientras el resto del equipo avanzaba en paralelo con el movimiento en primera persona, la linterna y la IA del enemigo (patrullar → perseguir → separar → purificar).', en: 'During the jam\'s first three days I built the entire HUD and all of its scripts, while the rest of the team worked in parallel on first-person movement, the flashlight, and the enemy AI (patrol → chase → split → purify).' },
-  'tds.process.2.title': { es: 'Menú principal', en: 'Main menu' },
-  'tds.process.2.body': { es: 'Con el mapa principal y el HUD ya en pie, diseñé e implementé el menú principal del juego.', en: 'With the main map and HUD already in place, I designed and implemented the game\'s main menu.' },
-  'tds.process.3.title': { es: 'Documentación viva', en: 'Living documentation' },
-  'tds.process.3.body': { es: 'En paralelo al desarrollo, mantuve actualizado el GDD base en Word, para que el equipo tuviera siempre una referencia clara de las decisiones de diseño a medida que avanzaba el jam.', en: 'Alongside development, I kept the base GDD updated in Word, so the team always had a clear reference for design decisions as the jam progressed.' },
-  'tds.process.4.title': { es: 'Pantallas de victoria y derrota', en: 'Win and lose screens' },
-  'tds.process.4.body': { es: 'Diseñé e implementé las pantallas de victoria y derrota, cerrando el ciclo de feedback del jugador.', en: 'I designed and implemented the win and lose screens, closing the player feedback loop.' },
-  'tds.process.5.title': { es: 'Integración final en Unity', en: 'Final integration in Unity' },
-  'tds.process.5.body': { es: 'Integré todos estos elementos —HUD, menú, pantallas de fin de partida y una ventana de créditos— dentro de Unity mediante scripts, como parte del pulido general del proyecto (efectos de sonido, música y menús).', en: 'I integrated all of these elements — HUD, menu, end-game screens and a credits window — into Unity through scripts, as part of the project\'s overall polish (sound effects, music and menus).' },
-  'tds.process.6.title': { es: 'Cierre: GDD y pitch', en: 'Wrap-up: GDD and pitch' },
-  'tds.process.6.body': { es: 'El último día del jam me encargué del diseño final del GDD y del pitch usado para presentar el proyecto, coincidiendo con su publicación el 10 de julio de 2026.', en: 'On the jam\'s last day I handled the final design of the GDD and the pitch used to present the project, coinciding with its release on July 10, 2026.' },
+  'tds.process.1.title': { es: 'Narrativa inicial', en: 'Initial narrative' },
+  'tds.process.1.body': { es: 'Antes de entrar en la interfaz, desarrollé la narrativa inicial del proyecto: la premisa del sueño fracturado, la amenaza de Mothroach y el objetivo de separar y purificar ambas mitades de la criatura, sobre la que el equipo construyó el resto del juego.', en: 'Before diving into the interface, I developed the project\'s initial narrative: the fractured-dream premise, the threat of Mothroach, and the goal of separating and purifying both halves of the creature, on top of which the team built the rest of the game.' },
+  'tds.process.2.title': { es: 'El HUD, desde el primer día', en: 'The HUD, from day one' },
+  'tds.process.2.body': { es: 'Durante los tres primeros días del jam desarrollé el HUD completo y todos sus scripts, mientras el resto del equipo avanzaba en paralelo con el movimiento en primera persona, la linterna y la IA del enemigo (patrullar → perseguir → separar → purificar).', en: 'During the jam\'s first three days I built the entire HUD and all of its scripts, while the rest of the team worked in parallel on first-person movement, the flashlight, and the enemy AI (patrol → chase → split → purify).' },
+  'tds.process.3.title': { es: 'Menú principal', en: 'Main menu' },
+  'tds.process.3.body': { es: 'Con el mapa principal y el HUD ya en pie, diseñé e implementé el menú principal del juego.', en: 'With the main map and HUD already in place, I designed and implemented the game\'s main menu.' },
+  'tds.process.4.title': { es: 'Documentación viva', en: 'Living documentation' },
+  'tds.process.4.body': { es: 'En paralelo al desarrollo, mantuve actualizado el GDD base en Word, para que el equipo tuviera siempre una referencia clara de las decisiones de diseño a medida que avanzaba el jam.', en: 'Alongside development, I kept the base GDD updated in Word, so the team always had a clear reference for design decisions as the jam progressed.' },
+  'tds.process.5.title': { es: 'Pantallas de victoria y derrota', en: 'Win and lose screens' },
+  'tds.process.5.body': { es: 'Diseñé e implementé las pantallas de victoria y derrota, cerrando el ciclo de feedback del jugador.', en: 'I designed and implemented the win and lose screens, closing the player feedback loop.' },
+  'tds.process.6.title': { es: 'Integración final en Unity', en: 'Final integration in Unity' },
+  'tds.process.6.body': { es: 'Integré todos estos elementos —HUD, menú, pantallas de fin de partida y una ventana de créditos— dentro de Unity mediante scripts, como parte del pulido general del proyecto (efectos de sonido, música y menús).', en: 'I integrated all of these elements — HUD, menu, end-game screens and a credits window — into Unity through scripts, as part of the project\'s overall polish (sound effects, music and menus).' },
+  'tds.process.7.title': { es: 'Cierre: GDD y pitch', en: 'Wrap-up: GDD and pitch' },
+  'tds.process.7.body': { es: 'El último día del jam me encargué del diseño final del GDD y del pitch usado para presentar el proyecto, coincidiendo con su publicación el 10 de julio de 2026.', en: 'On the jam\'s last day I handled the final design of the GDD and the pitch used to present the project, coinciding with its release on July 10, 2026.' },
   'tds.team.title': { es: 'Equipo', en: 'Team' },
   'tds.team.role.norajulia': { es: 'Programación', en: 'Programming' },
   'tds.team.role.dyenome':   { es: 'Arte 3D / Programación', en: '3D art / Programming' },
   'tds.team.role.mgilford':  { es: 'Programación', en: 'Programming' },
   'tds.team.role.laura':     { es: 'Diseño UI / Documentación', en: 'UI design / Documentation' },
   'tds.links.gdd': { es: 'Ver GDD', en: 'View GDD' },
+  'tds.challenges.p': { es: 'Mi principal desafío fue desarrollar la interfaz de usuario funcional dentro de Unity. Aunque ya tenía experiencia diseñando interfaces, nunca había implementado una UI completa en Unity con estados de botones, navegación y comportamiento funcional. Para superar este reto investigué la documentación oficial de Unity y me apoyé en diversos tutoriales para comprender las mejores prácticas de implementación. Este proyecto me permitió entender mejor el flujo de trabajo entre diseño e implementación, ampliando mis conocimientos sobre el sistema de UI de Unity.', en: 'My main challenge was building a functional user interface inside Unity. Although I already had experience designing interfaces, I had never implemented a full UI in Unity with button states, navigation, and working behavior. To work through this, I dug into Unity\'s official documentation and leaned on several tutorials to understand implementation best practices. This project helped me better understand the workflow between design and implementation, deepening my knowledge of Unity\'s UI system.' },
 };
 
 const LANG_KEY = 'laura-portfolio-lang';
