@@ -744,7 +744,7 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
   font-size: 0.78rem;
   color: #A39D8E;
 }
-.contact__links a:hover { color: var(--bg); }
+.contact__links a:hover { color: #C9C4B8; }
 
 /* ---------- Scroll reveal ---------- */
 .reveal {
