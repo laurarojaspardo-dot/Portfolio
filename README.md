@@ -24,14 +24,19 @@ portfolio/
 ├── js/
 │   ├── main.js                 # Menú móvil, nav, sección activa, scroll reveal
 │   ├── i18n.js                 # Diccionario de traducciones ES/EN + selector de idioma
+│   ├── theme.js                # Cambio a modo oscuro de la web
+│   ├── lightbox.js             # Ampliación de imágenes en las galerías.
 │   └── typewriter.js           # Efecto de escritura de los roles en el hero
 ├── projects/
-│   ├── tainted-palate.html
-│   ├── flammy-jim.html
+│   ├── down-the-drain.html
 │   ├── el-precio-de-resistir.html
-│   └── notco-web.html
+│   ├── flammy-jim.html
+│   ├── notco-web.html
+│   ├── the-dream-stalker.html
+│   └── toxic-delicacies.html
 └── assets/
-    └── images/                 # Capturas e imágenes de cada proyecto 
+    ├── img/                 # Capturas e imágenes de cada proyecto
+    └── video/               # Videos de cada proyecto 
 ```
 
 ## 📬 Contacto
