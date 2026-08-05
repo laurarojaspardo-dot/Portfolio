@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Down The Drain — Laura Rojas Pardo</title>
+<meta name="description" content="Down The Drain: plataformero arcade 2D de descenso infinito por una alcantarilla.">
+<link rel="stylesheet" href="../css/styles.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('laura-portfolio-theme');
+    if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">LAURA<span>.ROJAS</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="../index.html#sobre-mi" data-i18n="nav.sobre">Sobre mí</a></li>
+      <li><a href="../index.html#portafolio" data-i18n="nav.portafolio">Portafolio</a></li>
+      <li><a href="../index.html#cv" data-i18n="nav.cv">CV</a></li>
+      <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.theme.toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HEADER -->
+  <header class="pheader">
+    <div class="wrap">
+      <div class="pheader__grid">
+
+        <!-- ---------- Columna izquierda: texto ---------- -->
+        <div class="pheader__main">
+          <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+          <div class="pheader__stamps">
+            <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
+            <span class="stamp stamp--done" data-i18n="dtd.stamp.status">Finalizado</span>
+          </div>
+          <h1 class="pheader__title">Down The Drain</h1>
+          <p class="pheader__lede" data-i18n="dtd.lede">Un plataformero arcade de descenso infinito: reparas tuberías y esquivas ratas mientras una cámara implacable te empuja cada vez más profundo.</p>
+
+          <div class="infobar">
+            <div class="infobar__item"><h4 data-i18n="common.infobar.year">Año</h4><p>2026</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="dtd.info.status">Publicado</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="dtd.info.role">Diseño UI/UX, documentación y game design</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.theme">Tema</h4><p data-i18n="dtd.info.theme">Deeper and Deeper</p></div>
+          </div>
+        </div>
+
+        <!-- ---------- Columna derecha: video ---------- -->
+        <div class="pheader__media">
+          <div class="video-embed">
+              <video src="../assets/video/Main_DownTheDrain.mp4" controls></video>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.desc">Descripción</h2>
+        <p data-i18n="dtd.desc.p1">Down The Drain es un plataformero arcade 2D de descenso vertical, desarrollado en una game jam de Generation con una duración de solo dos días, bajo el tema "Deeper and Deeper". Se me ocurrió el concepto principal del juego, y lideré el diseño de UI y la documentación, en equipo con Juan Toca y Santiago Romero en programación, Jeffred Castellanos en pixel art, y Mario Mora en audio.</p>
+        <p data-i18n="dtd.desc.p2">El jugador controla a Mauro, un fontanero atrapado en una alcantarilla que debe reparar tuberías rotas mientras esquiva a Moshi, una rata que resta puntos al contacto. Una cámara de presión desciende a velocidad creciente y obliga a bajar cada vez más rápido: si te alcanza, es Game Over. No hay una condición de victoria tradicional — el objetivo es superar tu propio puntaje, en un loop de rejugabilidad tipo arcade score-attack.</p>
+        <p data-i18n="dtd.desc.p3">Ya está publicado y disponible para jugar en itch.io.</p>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
+        <ol class="process-list">
+          <li data-n="01"><strong data-i18n="dtd.process.1.title">Idea y GDD inicial</strong><span data-i18n="dtd.process.1.body">Buscábamos una idea simple de implementar en una jam de solo dos días, pero con alta rejugabilidad. Se me ocurrió la premisa del fontanero descendiendo por la alcantarilla, y durante el primer día desarrollé el GDD completo.</span></li>
+          <li data-n="02"><strong data-i18n="dtd.process.2.title">Wireframes y diseño de pantallas</strong><span data-i18n="dtd.process.2.body">En paralelo, diseñé en Figma los wireframes de las pantallas base del juego (menú, créditos, tutorial, Game Over, pausa), acorde a la estética de pixel art que estábamos manejando, e investigué tipografías para títulos y cuerpo de texto. Junto al equipo definimos la paleta de colores.</span></li>
+          <li data-n="03"><strong data-i18n="dtd.process.3.title">Desarrollo en paralelo</strong><span data-i18n="dtd.process.3.body">Mientras tanto, los programadores construyeron la mecánica base de plataformas infinitas, el spawn de enemigos y fallos en tuberías, y la movilidad del jugador; nuestro artista desarrolló los fondos y las tuberías.</span></li>
+          <li data-n="04"><strong data-i18n="dtd.process.4.title">Implementación de la UI en Unity</strong><span data-i18n="dtd.process.4.body">Para el segundo día ya tenía toda la UI implementada en Unity y conectada al juego principal, trabajando en mi propia rama de GitHub (repositorio creado desde el primer día).</span></li>
+          <li data-n="05"><strong data-i18n="dtd.process.5.title">Pitch y GDD final</strong><span data-i18n="dtd.process.5.body">Diseñé el GDD final acorde con la estética del juego y preparé el pitch usado para presentar el proyecto.</span></li>
+          <li data-n="06"><strong data-i18n="dtd.process.6.title">Pulido y lanzamiento</strong><span data-i18n="dtd.process.6.body">En el pulido final se integró un shake de cámara al recibir daño y un dash para el jugador. Se hizo el merge a la rama principal, se generaron los builds, y diseñé la página final de itch.io.</span></li>
+        </ol>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="dtd.team.title">Equipo</h2>
+        <ul class="cv__list">
+          <li><strong>Juan Toca</strong> — <span data-i18n="dtd.team.role.juan">Programación</span></li>
+          <li><strong>Santiago Romero</strong> — <span data-i18n="dtd.team.role.santiago">Programación</span></li>
+          <li><strong>Jeffred Castellanos</strong> — <span data-i18n="dtd.team.role.jeffred">Pixel art</span></li>
+          <li><strong>Mario Mora</strong> — <span data-i18n="dtd.team.role.mario">Audio</span></li>
+          <li><strong>Laura Rojas (yo)</strong> — <span data-i18n="dtd.team.role.laura">Diseño UI/UX, documentación y game design</span></li>
+        </ul>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.challenges">Desafíos y aprendizajes</h2>
+        <p data-i18n="dtd.challenges.p">Me enfrenté al reto de integrar shader graphs en los botones para lograr un pequeño brillo metálico, y tuve que resolver problemas para que ese brillo se mantuviera activo de forma consistente en todas las pantallas. A esto se sumó trabajar contra un tiempo sumamente limitado, al ser una jam de solo dos días. Esta experiencia amplió mis conocimientos sobre shader graphs en Unity y sobre cómo priorizar bajo restricciones de tiempo muy ajustadas.</p>
+      </section>
+
+      <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.tools">Herramientas</h2>
+        <div class="tag-row">
+          <span class="tag">Figma</span><span class="tag">Affinity</span><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">GitHub</span>
+        </div>
+        <h2 style="margin-top:36px;" data-i18n="common.section.skills">Habilidades demostradas</h2>
+        <div class="tag-row">
+          <span class="tag">Game Design</span><span class="tag">Trabajo en equipo</span><span class="tag">Narrative Design</span><span class="tag">Documentación (GDD)</span><span class="tag">UI/UX Design</span>
+        </div>
+      </section>
+
+      <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.gallery">Galería</h2>
+        <div class="pgallery">
+          <img src="../assets/img/DownTheDrain/Gallery_0.PNG" alt="Down The Drain">
+          <img src="../assets/img/DownTheDrain/Gallery_1.PNG" alt="Down The Drain">
+          <img src="../assets/img/DownTheDrain/Gallery_2.PNG" alt="Down The Drain">
+          <img src="../assets/img/DownTheDrain/Gallery_3.PNG" alt="Down The Drain">
+          <img src="../assets/img/DownTheDrain/Gallery_4.PNG" alt="Down The Drain">
+        </div>
+      </section>
+
+      <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.mywork">Mi trabajo</h2>
+        <p data-i18n="dtd.mywork.desc">Wireframes, pantallas de UI y logo que diseñé para este proyecto.</p>
+        <div class="pgallery">
+          <img src="../assets/img/DownTheDrain/Mi trabajo/Wireframe_0.png" alt="Wireframe_UI">
+          <img src="../assets/img/DownTheDrain/Mi trabajo/Wireframe_1.png" alt="Wireframe_UI">
+          <img src="../assets/img/DownTheDrain/Mi trabajo/Wireframe_2.png" alt="Wireframe_UI">
+          <img src="../assets/img/DownTheDrain/Mi trabajo/Wireframe_3.png" alt="Wireframe_UI">
+          <img src="../assets/img/DownTheDrain/Mi trabajo/Pantallas_0.png" alt="Pantallas_UI">
+          <img src="../assets/img/DownTheDrain/Mi trabajo/Pantallas_1.png" alt="Pantallas_UI">
+          <img src="../assets/img/DownTheDrain/Mi trabajo/Pantallas_2.png" alt="Pantallas_UI">
+        </div>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.links">Enlaces</h2>
+        <div class="plinks">
+          <a href="https://kath-4.itch.io/down-the-drain" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
+          <a href="https://github.com/scandelillo/DeeperAndDeeper" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.repo">Ver repositorio</a>
+          <a href="https://drive.google.com/file/d/14-X4zbLhpci_KvILV5yG8Q359nyKjMdj/view?usp=sharing" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="dtd.links.gdd">Ver GDD</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / UI Designer / Level Designer</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

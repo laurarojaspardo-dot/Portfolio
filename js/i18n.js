@@ -21,6 +21,7 @@ const translations = {
   'common.section.tools':      { es: 'Herramientas', en: 'Tools' },
   'common.section.skills':     { es: 'Habilidades demostradas', en: 'Skills demonstrated' },
   'common.section.gallery':    { es: 'Galería', en: 'Gallery' },
+  'common.section.mywork':     { es: 'Mi trabajo', en: 'My work' },
   'common.section.links':      { es: 'Enlaces', en: 'Links' },
   'common.section.challenges': { es: 'Desafíos y aprendizajes', en: 'Challenges & learnings' },
   'common.infobar.year':     { es: 'Año', en: 'Year' },
@@ -73,13 +74,17 @@ const translations = {
   'idx.portfolio.title':   { es: 'Proyectos bajo inspección', en: 'Projects under inspection' },
   'idx.portfolio.desc':    { es: 'Una selección de trabajo en videojuegos y en diseño visual. Cada ficha lleva a un informe completo del proceso.', en: 'A selection of game and visual design work. Each file leads to a full report of the process.' },
   'idx.portfolio.games.title':  { es: 'Videojuegos', en: 'Games' },
-  'idx.portfolio.games.count':  { es: '03 proyectos', en: '3 projects' },
+  'idx.portfolio.games.count':  { es: '04 proyectos', en: '4 projects' },
   'idx.portfolio.design.title': { es: 'Diseño', en: 'Design' },
   'idx.portfolio.design.count': { es: '02 proyectos', en: '2 projects' },
 
   'idx.card.tds.meta':  { es: '2026 · You Really Shouldn\'t Mix Those Game Jam', en: '2026 · You Really Shouldn\'t Mix Those Game Jam' },
   'idx.card.tds.desc':  { es: 'Juego de terror en primera persona: purifica dos mitades opuestas de una criatura híbrida entre pesadilla y sueño antes de que consuma al niño que sueña.', en: 'A first-person horror game: purify two opposing halves of a nightmare-dream hybrid creature before it consumes the dreaming child.' },
   'idx.card.tds.stamp': { es: 'Finalizado', en: 'Finished' },
+
+  'idx.card.dtd.meta':  { es: '2026 · Generation Game Jam · Deeper and Deeper', en: '2026 · Generation Game Jam · Deeper and Deeper' },
+  'idx.card.dtd.desc':  { es: 'Plataformero arcade de descenso infinito: reparas tuberías y esquivas ratas mientras una cámara implacable te empuja cada vez más profundo.', en: 'An infinite-descent arcade platformer: repair pipes and dodge rats while a relentless camera pushes you deeper and deeper.' },
+  'idx.card.dtd.stamp': { es: 'Finalizado', en: 'Finished' },
 
   'idx.card.tp.meta':  { es: '2026 · Game Jam MadeToBePlayed', en: '2026 · MadeToBePlayed Game Jam' },
   'idx.card.tp.desc':  { es: 'Juego de inspección y memoria en primera persona creado para la Game Jam MadeToBePlayed. El jugador es el degustador de un restaurante y debe identificar qué combinaciones de ingredientes son tóxicas antes de servir cada plato.', en: 'A first-person inspection and memory game made for the MadeToBePlayed Game Jam. The player is a restaurant\'s taster, tasked with identifying which ingredient combinations are toxic before each dish is served.' },
@@ -152,6 +157,7 @@ const translations = {
   'tp.team.role.valentina': { es: 'Diseño UI', en: 'UI design' },
   'tp.team.role.laura':     { es: 'Arte de assets y diseño de juego', en: 'Asset art & game design' },
   'tp.challenges.p': { es: 'El principal reto fue crear pixel art con una estética mucho más creativa y alejada de lo convencional, diseñando platillos mutados con una apariencia posapocalíptica. Para generar ideas exploré distintas propuestas utilizando prompts en Gemini enfocados en el diseño conceptual de alimentos, y a partir de esas referencias desarrollé las versiones finales en pixel art, adaptándolas al estilo visual del juego. Este proceso fortaleció mi capacidad para transformar ideas conceptuales en recursos visuales coherentes con la dirección artística del proyecto.', en: 'The main challenge was creating pixel art with a much more creative aesthetic, far from the conventional, designing mutated dishes with a post-apocalyptic look. To generate ideas I explored different directions using Gemini prompts focused on conceptual food design, and from those references I developed the final pixel art versions, adapting them to the game\'s visual style. This process strengthened my ability to turn conceptual ideas into visual assets consistent with the project\'s art direction.' },
+  'tp.mywork.desc': { es: 'Una muestra de los assets de pixel art que diseñé para el juego.', en: 'A sample of the pixel art assets I designed for the game.' },
 
   // ---------- FLAMMY JIM ----------
   'fj.stamp.status': { es: 'En desarrollo', en: 'In development' },
@@ -171,6 +177,7 @@ const translations = {
   'fj.process.4.title': { es: 'Meta pendiente', en: 'Pending goal' },
   'fj.process.4.body': { es: 'Tengo planeada una mecánica que rompa la monotonía del loop original de "esquivar y esquivar" y diferencie el juego de un Flappy Bird estándar. Todavía no la he implementado.', en: 'I have a mechanic planned that breaks the monotony of the original "dodge and dodge" loop and sets the game apart from a standard Flappy Bird. I haven\'t implemented it yet.' },
   'fj.links.note': { es: 'El repositorio de este proyecto es privado por ahora.', en: 'This project\'s repository is private for now.' },
+  'fj.mywork.desc': { es: 'Piezas de diseño y arte que desarrollé para este proyecto.', en: 'Design and art pieces I developed for this project.' },
   'fj.challenges.p': { es: 'Este fue mi primer acercamiento al desarrollo de videojuegos con Unity. El mayor desafío fue comprender el funcionamiento general del motor y su flujo de trabajo. Para ello seguí un tutorial estructurado que me permitió construir una base sólida sobre la cual comenzar a desarrollar proyectos propios. Gracias a esta experiencia adquirí los fundamentos necesarios para continuar aprendiendo y desarrollando videojuegos en Unity.', en: 'This was my first hands-on approach to game development with Unity. The biggest challenge was understanding how the engine and its workflow worked as a whole. To do that, I followed a structured tutorial that let me build a solid foundation to start developing my own projects from. Thanks to this experience I gained the fundamentals I needed to keep learning and developing games in Unity.' },
 
   // ---------- EL PRECIO DE RESISTIR ----------
@@ -244,6 +251,38 @@ const translations = {
   'tds.team.role.mgilford':  { es: 'Programación', en: 'Programming' },
   'tds.team.role.laura':     { es: 'Diseño UI / Documentación', en: 'UI design / Documentation' },
   'tds.links.gdd': { es: 'Ver GDD', en: 'View GDD' },
+  'tds.mywork.desc': { es: 'HUD, botones, pantallas de UI y logo que diseñé para este proyecto.', en: 'HUD, buttons, UI screens, and logo that I designed for this project.' },
+
+  // ---------- DOWN THE DRAIN ----------
+  'dtd.stamp.status': { es: 'Finalizado', en: 'Finished' },
+  'dtd.lede': { es: 'Un plataformero arcade de descenso infinito: reparas tuberías y esquivas ratas mientras una cámara implacable te empuja cada vez más profundo.', en: 'An infinite-descent arcade platformer: repair pipes and dodge rats while a relentless camera pushes you deeper and deeper.' },
+  'dtd.info.status': { es: 'Publicado', en: 'Released' },
+  'dtd.info.role':   { es: 'Diseño UI/UX, documentación y game design', en: 'UI/UX design, documentation and game design' },
+  'dtd.info.theme':  { es: 'Deeper and Deeper', en: 'Deeper and Deeper' },
+  'dtd.desc.p1': { es: 'Down The Drain es un plataformero arcade 2D de descenso vertical, desarrollado en una game jam de Generation con una duración de solo dos días, bajo el tema "Deeper and Deeper". Se me ocurrió el concepto principal del juego, y lideré el diseño de UI y la documentación, en equipo con Juan Toca y Santiago Romero en programación, Jeffred Castellanos en pixel art, y Mario Mora en audio.', en: 'Down The Drain is a 2D vertical-descent arcade platformer, developed in a two-day Generation game jam under the theme "Deeper and Deeper". I came up with the game\'s core concept and led the UI design and documentation, alongside Juan Toca and Santiago Romero on programming, Jeffred Castellanos on pixel art, and Mario Mora on audio.' },
+  'dtd.desc.p2': { es: 'El jugador controla a Mauro, un fontanero atrapado en una alcantarilla que debe reparar tuberías rotas mientras esquiva a Moshi, una rata que resta puntos al contacto. Una cámara de presión desciende a velocidad creciente y obliga a bajar cada vez más rápido: si te alcanza, es Game Over. No hay una condición de victoria tradicional — el objetivo es superar tu propio puntaje, en un loop de rejugabilidad tipo arcade score-attack.', en: 'The player controls Mauro, a plumber trapped in a sewer who must repair broken pipes while dodging Moshi, a rat that docks points on contact. A pressure camera descends at increasing speed, forcing you to move faster and faster — if it catches you, it\'s Game Over. There\'s no traditional win condition — the goal is to beat your own score, in an arcade score-attack replayability loop.' },
+  'dtd.desc.p3': { es: 'Ya está publicado y disponible para jugar en itch.io.', en: 'It\'s already published and playable on itch.io.' },
+  'dtd.process.1.title': { es: 'Idea y GDD inicial', en: 'Idea and initial GDD' },
+  'dtd.process.1.body': { es: 'Buscábamos una idea simple de implementar en una jam de solo dos días, pero con alta rejugabilidad. Se me ocurrió la premisa del fontanero descendiendo por la alcantarilla, y durante el primer día desarrollé el GDD completo.', en: 'We were after a concept simple enough to build in a two-day jam, but with high replayability. I came up with the premise of a plumber descending through the sewer, and during the first day I wrote the entire GDD.' },
+  'dtd.process.2.title': { es: 'Wireframes y diseño de pantallas', en: 'Wireframes and screen design' },
+  'dtd.process.2.body': { es: 'En paralelo, diseñé en Figma los wireframes de las pantallas base del juego (menú, créditos, tutorial, Game Over, pausa), acorde a la estética de pixel art que estábamos manejando, e investigué tipografías para títulos y cuerpo de texto. Junto al equipo definimos la paleta de colores.', en: 'In parallel, I designed the game\'s core screen wireframes in Figma (menu, credits, tutorial, Game Over, pause), matching the pixel art aesthetic we were going for, and researched typefaces for titles and body text. Together with the team we defined the color palette.' },
+  'dtd.process.3.title': { es: 'Desarrollo en paralelo', en: 'Parallel development' },
+  'dtd.process.3.body': { es: 'Mientras tanto, los programadores construyeron la mecánica base de plataformas infinitas, el spawn de enemigos y fallos en tuberías, y la movilidad del jugador; nuestro artista desarrolló los fondos y las tuberías.', en: 'Meanwhile, the programmers built the base infinite-platform mechanic, enemy and pipe-failure spawning, and player movement; our artist developed the backgrounds and pipes.' },
+  'dtd.process.4.title': { es: 'Implementación de la UI en Unity', en: 'UI implementation in Unity' },
+  'dtd.process.4.body': { es: 'Para el segundo día ya tenía toda la UI implementada en Unity y conectada al juego principal, trabajando en mi propia rama de GitHub (repositorio creado desde el primer día).', en: 'By the second day I already had the entire UI implemented in Unity and wired up to the main game, working on my own GitHub branch (the repository was created on day one).' },
+  'dtd.process.5.title': { es: 'Pitch y GDD final', en: 'Pitch and final GDD' },
+  'dtd.process.5.body': { es: 'Diseñé el GDD final acorde con la estética del juego y preparé el pitch usado para presentar el proyecto.', en: 'I designed the final GDD to match the game\'s aesthetic and prepared the pitch used to present the project.' },
+  'dtd.process.6.title': { es: 'Pulido y lanzamiento', en: 'Polish and launch' },
+  'dtd.process.6.body': { es: 'En el pulido final se integró un shake de cámara al recibir daño y un dash para el jugador. Se hizo el merge a la rama principal, se generaron los builds, y diseñé la página final de itch.io.', en: 'The final polish added a camera shake on taking damage and a player dash. We merged into the main branch, generated the builds, and I designed the final itch.io page.' },
+  'dtd.team.title': { es: 'Equipo', en: 'Team' },
+  'dtd.team.role.juan':     { es: 'Programación', en: 'Programming' },
+  'dtd.team.role.santiago': { es: 'Programación', en: 'Programming' },
+  'dtd.team.role.jeffred':  { es: 'Pixel art', en: 'Pixel art' },
+  'dtd.team.role.mario':    { es: 'Audio', en: 'Audio' },
+  'dtd.team.role.laura':    { es: 'Diseño UI/UX, documentación y game design', en: 'UI/UX design, documentation and game design' },
+  'dtd.challenges.p': { es: 'Me enfrenté al reto de integrar shader graphs en los botones para lograr un pequeño brillo metálico, y tuve que resolver problemas para que ese brillo se mantuviera activo de forma consistente en todas las pantallas. A esto se sumó trabajar contra un tiempo sumamente limitado, al ser una jam de solo dos días. Esta experiencia amplió mis conocimientos sobre shader graphs en Unity y sobre cómo priorizar bajo restricciones de tiempo muy ajustadas.', en: 'I took on the challenge of integrating shader graphs into the buttons for a subtle metallic shine, and had to work through issues keeping that shine consistently active across every screen. On top of that, I was racing against a very limited timeframe, since it was only a two-day jam. This experience broadened my knowledge of shader graphs in Unity and of how to prioritize under very tight time constraints.' },
+  'dtd.mywork.desc': { es: 'Wireframes, pantallas de UI y logo que diseñé para este proyecto.', en: 'Wireframes, UI screens, and a logo I designed for this project.' },
+  'dtd.links.gdd': { es: 'Ver GDD', en: 'View GDD' },
   'tds.challenges.p': { es: 'Mi principal desafío fue desarrollar la interfaz de usuario funcional dentro de Unity. Aunque ya tenía experiencia diseñando interfaces, nunca había implementado una UI completa en Unity con estados de botones, navegación y comportamiento funcional. Para superar este reto investigué la documentación oficial de Unity y me apoyé en diversos tutoriales para comprender las mejores prácticas de implementación. Este proyecto me permitió entender mejor el flujo de trabajo entre diseño e implementación, ampliando mis conocimientos sobre el sistema de UI de Unity.', en: 'My main challenge was building a functional user interface inside Unity. Although I already had experience designing interfaces, I had never implemented a full UI in Unity with button states, navigation, and working behavior. To work through this, I dug into Unity\'s official documentation and leaned on several tutorials to understand implementation best practices. This project helped me better understand the workflow between design and implementation, deepening my knowledge of Unity\'s UI system.' },
 };
 
