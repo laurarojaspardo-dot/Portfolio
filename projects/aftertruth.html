@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aftertruth — Laura Rojas Pardo</title>
+<meta name="description" content="AFTERTRUTH: juego de misterio narrativo en primera persona.">
+<link rel="stylesheet" href="../css/styles.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('laura-portfolio-theme');
+    if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">LAURA<span>.ROJAS</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="../index.html#sobre-mi" data-i18n="nav.sobre">Sobre mí</a></li>
+      <li><a href="../index.html#portafolio" data-i18n="nav.portafolio">Portafolio</a></li>
+      <li><a href="../index.html#cv" data-i18n="nav.cv">CV</a></li>
+      <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.theme.toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt" data-lang="es">ES</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HEADER -->
+  <header class="pheader">
+    <div class="wrap">
+      <div class="pheader__grid">
+
+        <!-- ---------- Columna izquierda: texto ---------- -->
+        <div class="pheader__main">
+          <a href="../index.html#portafolio" class="pheader__back" data-i18n="common.back">&larr; Volver al portafolio</a>
+          <div class="pheader__stamps">
+            <span class="stamp stamp--game" data-i18n="common.stamp.game">Videojuego</span>
+            <span class="stamp stamp--done" data-i18n="at.stamp.status">Beta publicada</span>
+          </div>
+          <h1 class="pheader__title">Aftertruth</h1>
+          <p class="pheader__lede" data-i18n="at.lede">Un juego de misterio narrativo en primera persona sobre reconstruir la verdad a partir de fragmentos — antes conocido como Missing Truths.</p>
+
+          <div class="infobar">
+            <div class="infobar__item"><h4 data-i18n="common.infobar.year">Año</h4><p>2026</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.status">Estado</h4><p data-i18n="at.info.status">Beta publicada</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.role">Mi rol</h4><p data-i18n="at.info.role">UI/UX, identidad visual y documentación</p></div>
+            <div class="infobar__item"><h4 data-i18n="common.infobar.duration">Duración</h4><p data-i18n="at.info.duration">Sprints de bootcamp — lanzamiento 26/08/2026</p></div>
+          </div>
+        </div>
+
+        <!-- ---------- Columna derecha: video ---------- -->
+        <div class="pheader__media">
+          <div class="video-embed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ek9q2igJDDM?si=jhntEXIMnV2ssPT1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.desc">Descripción</h2>
+        <p data-i18n="at.desc.p1">AFTERTRUTH (antes Missing Truths) es un juego de misterio narrativo en primera persona, desarrollado como proyecto de bootcamp por un equipo de cinco personas: Laura Chaves, Miguel Torres, Mariano Ramírez, Sebastian Villota y yo. El proyecto se organizó en sprints con entregas el 11, 19 y 24-26 de agosto de 2026, publicando la beta en itch.io el día del lanzamiento.</p>
+        <p data-i18n="at.desc.p2">Mi rol abarcó el diseño de UI/UX diegética y no diegética, la identidad visual completa del juego —paletas de color y logos— y la documentación del GDD, incluyendo su diseño y diagramación.</p>
+        <p data-i18n="at.desc.p3">La beta ya está publicada en itch.io, con buena recepción: reseñas positivas de los mentores invitados de Generation, además de cientos de vistas y partidas jugadas desde su lanzamiento.</p>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.process">Proceso de desarrollo</h2>
+        <ol class="process-list">
+          <li data-n="01"><strong data-i18n="at.process.1.title">Concepto y GDD inicial</strong><span data-i18n="at.process.1.body">Definimos la premisa del misterio narrativo y el rumbo del proyecto, que pasó de llamarse Missing Truths a AFTERTRUTH a medida que la idea maduraba.</span></li>
+          <li data-n="02"><strong data-i18n="at.process.2.title">Identidad visual</strong><span data-i18n="at.process.2.body">Diseñé la identidad visual completa del juego —paletas de color y logos— buscando que fuera coherente con la temática de misterio y transmitiera los sentimientos clave que queríamos producir en el jugador.</span></li>
+          <li data-n="03"><strong data-i18n="at.process.3.title">UI/UX diegética y no diegética</strong><span data-i18n="at.process.3.body">Diseñé la interfaz en sus dos capas: elementos integrados al mundo del juego (diegéticos) y menús y pantallas tradicionales (no diegéticos), coordinando su implementación con el resto del equipo.</span></li>
+          <li data-n="04"><strong data-i18n="at.process.4.title">Sprints de entrega</strong><span data-i18n="at.process.4.body">El trabajo se organizó en sprints con entregas el 11 y el 19 de agosto, cada uno con documentación y avances revisados por el equipo.</span></li>
+          <li data-n="05"><strong data-i18n="at.process.5.title">Documentación del GDD</strong><span data-i18n="at.process.5.body">Documenté y diagramé el GDD del proyecto, manteniéndolo como referencia central del diseño a lo largo de todos los sprints.</span></li>
+          <li data-n="06"><strong data-i18n="at.process.6.title">Sprint final y lanzamiento</strong><span data-i18n="at.process.6.body">En el sprint final (24-26 de agosto) cerramos la beta y la publicamos en itch.io el día del lanzamiento, el 26 de agosto de 2026.</span></li>
+        </ol>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="at.team.title">Equipo</h2>
+        <ul class="cv__list">
+          <li><strong>Laura Chaves</strong> — <span data-i18n="at.team.role.laurac">Game Design, Project Manager y arte 3D de entornos</span></li>
+          <li><strong>Miguel Torres</strong> — <span data-i18n="at.team.role.miguel">Artista técnico, programador líder y arte 3D de personajes</span></li>
+          <li><strong>Mariano Ramírez</strong> — <span data-i18n="at.team.role.mariano">Programación, audio manager e implementación de UI</span></li>
+          <li><strong>Sebastian Villota</strong> — <span data-i18n="at.team.role.sebastian">Arte 3D de objetos y pistas, diseño de audio</span></li>
+          <li><strong>Laura Rojas (yo)</strong> — <span data-i18n="at.team.role.laurar">Documentación, diseño UI/UX e identidad visual</span></li>
+        </ul>
+      </section>
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.challenges">Desafíos y aprendizajes</h2>
+        <p data-i18n="at.challenges.p">Uno de mis principales retos fue la gestión del tiempo y de los recursos que el equipo íbamos generando, para mantener un buen flujo de trabajo e integrar todo de forma coherente dentro de los plazos de cada sprint. Para lograrlo, prioricé una comunicación constante con el equipo y una organización clara de los entregables en cada etapa. El otro gran desafío fue diseñar la identidad visual del juego de manera que estuviera acorde con su temática de misterio y lograra transmitir los sentimientos clave que queríamos producir en el jugador. Esta experiencia fortaleció mi capacidad para sostener una dirección de arte coherente bajo presión de tiempo, sin perder de vista la experiencia emocional que buscábamos generar.</p>
+      </section>
+
+      <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.tools">Herramientas</h2>
+        <div class="tag-row">
+          <span class="tag">Figma</span><span class="tag">Illustrator</span><span class="tag">Affinity Designer</span><span class="tag">Word</span><span class="tag">Unity</span>
+        </div>
+        <h2 style="margin-top:36px;" data-i18n="common.section.skills">Habilidades demostradas</h2>
+        <div class="tag-row">
+          <span class="tag">UI/UX Design</span><span class="tag">Identidad Visual</span><span class="tag">Documentación (GDD)</span><span class="tag">Diseño diegético/no diegético</span><span class="tag">Trabajo en equipo</span>
+        </div>
+      </section>
+
+      <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.gallery">Galería</h2>
+        <div class="pgallery">
+          <img src="../assets/img/Aftertruth/Gallery_0.png" alt="Aftertruth">
+          <img src="../assets/img/Aftertruth/Gallery_1.png" alt="Aftertruth">
+          <img src="../assets/img/Aftertruth/Gallery_2.png" alt="Aftertruth">
+          <img src="../assets/img/Aftertruth/Gallery_4.png" alt="Aftertruth">
+          <img src="../assets/img/Aftertruth/Gallery_5.png" alt="Aftertruth">
+          <img src="../assets/img/Aftertruth/Gallery_6.png" alt="Aftertruth">
+        </div>
+      </section>
+
+      <!-- ============================================================
+           GALERÍA "MI TRABAJO" — solo piezas propias (UI diegética/no
+           diegética, identidad visual, logos, GDD), separada de la
+           galería general del juego de arriba. Reemplaza los
+           placeholders por tus capturas reales.
+           ============================================================ -->
+      <!-- <section class="pbody__section pbody__section--wide">
+        <h2 data-i18n="common.section.mywork">Mi trabajo</h2>
+        <p data-i18n="at.mywork.desc">Identidad visual, UI/UX y documentación del GDD que diseñé para este proyecto.</p>
+        <div class="pgallery">
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+          <div class="media-placeholder"><span class="media-placeholder__label" data-i18n="common.media.pending">Imagen pendiente</span></div>
+        </div>
+      </section> -->
+
+      <section class="pbody__section">
+        <h2 data-i18n="common.section.links">Enlaces</h2>
+        <div class="plinks">
+          <a href="https://ferxha.itch.io/aftertruth" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.itch">Ver en itch.io</a>
+          <a href="https://github.com/Cerpion/AFTERTRUTH" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="common.btn.repo">Ver repositorio</a>
+          <a href="https://drive.google.com/file/d/1FxTOsI4L3re3XfBZyaVpOlaNwmWDAWfe/view?usp=sharing" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="dtd.links.gdd">Ver GDD</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="psimplefoot">Laura Katherinne Rojas Pardo — Game Developer / Game Designer / UI Designer / Level Designer</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

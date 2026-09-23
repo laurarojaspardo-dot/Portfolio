@@ -47,7 +47,7 @@ const translations = {
     en: 'I design and develop playable experiences where narrative and mechanics test each other. Training as a Unity Developer with Generation Colombia, focused on narrative design, UI/UX design and game systems.'
   },
   'idx.hero.scroll': { es: 'Desplázate', en: 'Scroll' },
-  'idx.hero.spotlight.meta':  { es: '2026 · Finalizado', en: '2026 · Completed' },
+  'idx.hero.spotlight.meta':  { es: '2026 · Beta publicada', en: '2026 · Beta released' },
   'idx.hero.spotlight.cta':   { es: 'Ver proyecto actual', en: 'See current project' },
 
   // ---------- INDEX — About ----------
@@ -74,7 +74,7 @@ const translations = {
   'idx.portfolio.title':   { es: 'Proyectos bajo inspección', en: 'Projects under inspection' },
   'idx.portfolio.desc':    { es: 'Una selección de trabajo en videojuegos y en diseño visual. Cada ficha lleva a un informe completo del proceso.', en: 'A selection of game and visual design work. Each file leads to a full report of the process.' },
   'idx.portfolio.games.title':  { es: 'Videojuegos', en: 'Games' },
-  'idx.portfolio.games.count':  { es: '04 proyectos', en: '4 projects' },
+  'idx.portfolio.games.count':  { es: '05 proyectos', en: '5 projects' },
   'idx.portfolio.design.title': { es: 'Diseño', en: 'Design' },
   'idx.portfolio.design.count': { es: '02 proyectos', en: '2 projects' },
 
@@ -82,11 +82,15 @@ const translations = {
   'idx.card.tds.desc':  { es: 'Juego de terror en primera persona: purifica dos mitades opuestas de una criatura híbrida entre pesadilla y sueño antes de que consuma al niño que sueña.', en: 'A first-person horror game: purify two opposing halves of a nightmare-dream hybrid creature before it consumes the dreaming child.' },
   'idx.card.tds.stamp': { es: 'Finalizado', en: 'Finished' },
 
-  'idx.card.dtd.meta':  { es: '2026 · Generation Game Jam · Deeper and Deeper', en: '2026 · Generation Game Jam · Deeper and Deeper' },
+  'idx.card.dtd.meta':  { es: '2026 · Deeper and Deeper Game Jam ', en: '2026 · Deeper and Deeper Game Jam' },
   'idx.card.dtd.desc':  { es: 'Plataformero arcade de descenso infinito: reparas tuberías y esquivas ratas mientras una cámara implacable te empuja cada vez más profundo.', en: 'An infinite-descent arcade platformer: repair pipes and dodge rats while a relentless camera pushes you deeper and deeper.' },
+  'idx.card.at.meta':   { es: '2026 · Proyecto de bootcamp', en: '2026 · Bootcamp project' },
+  'idx.card.at.desc':   { es: 'Juego de misterio narrativo en primera persona sobre reconstruir la verdad a partir de fragmentos. Antes conocido como Missing Truths.', en: 'A first-person narrative mystery game about piecing the truth back together from fragments. Formerly known as Missing Truths.' },
+  'idx.card.at.stamp':  { es: 'Beta publicada', en: 'Beta released' },
+
   'idx.card.dtd.stamp': { es: 'Finalizado', en: 'Finished' },
 
-  'idx.card.tp.meta':  { es: '2026 · Game Jam MadeToBePlayed', en: '2026 · MadeToBePlayed Game Jam' },
+  'idx.card.tp.meta':  { es: '2026 · MadeToBePlayed Game Jam ', en: '2026 · MadeToBePlayed Game Jam' },
   'idx.card.tp.desc':  { es: 'Juego de inspección y memoria en primera persona creado para la Game Jam MadeToBePlayed. El jugador es el degustador de un restaurante y debe identificar qué combinaciones de ingredientes son tóxicas antes de servir cada plato.', en: 'A first-person inspection and memory game made for the MadeToBePlayed Game Jam. The player is a restaurant\'s taster, tasked with identifying which ingredient combinations are toxic before each dish is served.' },
   'idx.card.tp.stamp': { es: 'Finalizado', en: 'Finished' },
 
@@ -114,7 +118,7 @@ const translations = {
   'idx.cv.soft.li3': { es: 'Resolución de problemas y pensamiento de sistemas', en: 'Problem solving and systems thinking' },
   'idx.cv.edu.title': { es: 'Formación', en: 'Education' },
   'idx.cv.edu.e1.title':  { es: 'Bootcamp en Desarrollo en Unity', en: 'Unity Development Bootcamp' },
-  'idx.cv.edu.e1.status': { es: 'En curso', en: 'Ongoing' },
+  'idx.cv.edu.e1.status': { es: 'Finalizado', en: 'Completed' },
   'idx.cv.edu.e2.title': { es: 'Técnico en Producción Multimedia', en: 'Multimedia Production Technician' },
   'idx.cv.edu.e2.desc':  { es: 'Comunicación, diseño y desarrollo multimedia.', en: 'Communication, design and multimedia development.' },
   'idx.cv.exp.title': { es: 'Experiencia', en: 'Experience' },
@@ -251,7 +255,7 @@ const translations = {
   'tds.team.role.mgilford':  { es: 'Programación', en: 'Programming' },
   'tds.team.role.laura':     { es: 'Diseño UI / Documentación', en: 'UI design / Documentation' },
   'tds.links.gdd': { es: 'Ver GDD', en: 'View GDD' },
-  'tds.mywork.desc': { es: 'HUD, botones, pantallas de UI y logo que diseñé para este proyecto.', en: 'HUD, buttons, UI screens, and logo that I designed for this project.' },
+  'tds.mywork.desc': { es: 'Wireframes y pantallas de UI que diseñé para este proyecto.', en: 'Wireframes and UI screens I designed for this project.' },
 
   // ---------- DOWN THE DRAIN ----------
   'dtd.stamp.status': { es: 'Finalizado', en: 'Finished' },
@@ -281,8 +285,38 @@ const translations = {
   'dtd.team.role.mario':    { es: 'Audio', en: 'Audio' },
   'dtd.team.role.laura':    { es: 'Diseño UI/UX, documentación y game design', en: 'UI/UX design, documentation and game design' },
   'dtd.challenges.p': { es: 'Me enfrenté al reto de integrar shader graphs en los botones para lograr un pequeño brillo metálico, y tuve que resolver problemas para que ese brillo se mantuviera activo de forma consistente en todas las pantallas. A esto se sumó trabajar contra un tiempo sumamente limitado, al ser una jam de solo dos días. Esta experiencia amplió mis conocimientos sobre shader graphs en Unity y sobre cómo priorizar bajo restricciones de tiempo muy ajustadas.', en: 'I took on the challenge of integrating shader graphs into the buttons for a subtle metallic shine, and had to work through issues keeping that shine consistently active across every screen. On top of that, I was racing against a very limited timeframe, since it was only a two-day jam. This experience broadened my knowledge of shader graphs in Unity and of how to prioritize under very tight time constraints.' },
-  'dtd.mywork.desc': { es: 'Wireframes, pantallas de UI y logo que diseñé para este proyecto.', en: 'Wireframes, UI screens, and a logo I designed for this project.' },
+  'dtd.mywork.desc': { es: 'Wireframes, pantallas de UI y documentación que diseñé para este proyecto.', en: 'Wireframes, UI screens and documentation I designed for this project.' },
   'dtd.links.gdd': { es: 'Ver GDD', en: 'View GDD' },
+
+  // ---------- AFTERTRUTH ----------
+  'at.stamp.status': { es: 'Beta publicada', en: 'Beta released' },
+  'at.lede': { es: 'Un juego de misterio narrativo en primera persona sobre reconstruir la verdad a partir de fragmentos.', en: 'A first-person narrative mystery game about piecing the truth back together from fragments.' },
+  'at.info.status':   { es: 'Beta publicada', en: 'Beta released' },
+  'at.info.role':     { es: 'UI/UX, identidad visual y documentación', en: 'UI/UX, visual identity and documentation' },
+  'at.info.duration': { es: '3 semanas', en: '3 weeks' },
+  'at.desc.p1': { es: 'Aftertruth es un juego de misterio narrativo en primera persona, desarrollado como proyecto de bootcamp por un equipo de cinco personas: Laura Chaves, Miguel Torres, Mariano Ramírez, Sebastian Villota y yo. El proyecto se organizó en sprints con entregas el 11, 19 y 24-26 de agosto de 2026, publicando la beta en itch.io el día del lanzamiento.', en: 'Aftertruth is a first-person narrative mystery game, developed as a bootcamp project by a five-person team: Laura Chaves, Miguel Torres, Mariano Ramírez, Sebastian Villota and me. The project was organized into sprints with deliveries on August 11, 19, and 24-26, 2026, publishing the beta on itch.io on launch day.' },
+  'at.desc.p2': { es: 'Mi rol abarcó el diseño de UI/UX diegética y no diegética, la identidad visual completa del juego —paletas de color y logos— y la documentación del GDD, incluyendo su diseño y diagramación.', en: 'My role covered diegetic and non-diegetic UI/UX design, the game\'s full visual identity — color palettes and logos — and the GDD documentation, including its design and layout.' },
+  'at.desc.p3': { es: 'La beta ya está publicada en itch.io, con buena recepción: reseñas positivas de los mentores invitados de Generation, además de cientos de vistas y partidas jugadas desde su lanzamiento.', en: 'The beta is already published on itch.io, with a good reception: positive reviews from Generation\'s guest mentors, plus hundreds of views and plays since launch.' },
+  'at.process.1.title': { es: 'Concepto y GDD inicial', en: 'Concept and initial GDD' },
+  'at.process.1.body': { es: 'Definimos la premisa del misterio narrativo y el rumbo del proyecto, que pasó de llamarse Missing Truths a AFTERTRUTH a medida que la idea maduraba.', en: 'We defined the narrative mystery premise and the project\'s direction, which went from being called Missing Truths to AFTERTRUTH as the idea matured.' },
+  'at.process.2.title': { es: 'Identidad visual', en: 'Visual identity' },
+  'at.process.2.body': { es: 'Diseñé la identidad visual completa del juego —paletas de color y logos— buscando que fuera coherente con la temática de misterio y transmitiera los sentimientos clave que queríamos producir en el jugador.', en: 'I designed the game\'s full visual identity — color palettes and logos — aiming for it to be coherent with the mystery theme and convey the key feelings we wanted to produce in the player.' },
+  'at.process.3.title': { es: 'UI/UX diegética y no diegética', en: 'Diegetic and non-diegetic UI/UX' },
+  'at.process.3.body': { es: 'Diseñé la interfaz en sus dos capas: elementos integrados al mundo del juego (diegéticos) y menús y pantallas tradicionales (no diegéticos), coordinando su implementación con el resto del equipo.', en: 'I designed the interface across both layers: elements integrated into the game world (diegetic) and traditional menus and screens (non-diegetic), coordinating their implementation with the rest of the team.' },
+  'at.process.4.title': { es: 'Sprints de entrega', en: 'Delivery sprints' },
+  'at.process.4.body': { es: 'El trabajo se organizó en sprints con entregas el 11 y el 19 de agosto, cada uno con documentación y avances revisados por el equipo.', en: 'The work was organized into sprints with deliveries on August 11 and 19, each with documentation and progress reviewed by the team.' },
+  'at.process.5.title': { es: 'Documentación del GDD', en: 'GDD documentation' },
+  'at.process.5.body': { es: 'Documenté y diagramé el GDD del proyecto, manteniéndolo como referencia central del diseño a lo largo de todos los sprints.', en: 'I documented and laid out the project\'s GDD, keeping it as the central design reference throughout every sprint.' },
+  'at.process.6.title': { es: 'Sprint final y lanzamiento', en: 'Final sprint and launch' },
+  'at.process.6.body': { es: 'En el sprint final (24-26 de agosto) cerramos la beta y la publicamos en itch.io el día del lanzamiento, el 26 de agosto de 2026.', en: 'In the final sprint (August 24-26) we closed out the beta and published it on itch.io on launch day, August 26, 2026.' },
+  'at.team.title': { es: 'Equipo', en: 'Team' },
+  'at.team.role.laurac':    { es: 'Game Design, Project Manager y arte 3D de entornos', en: 'Game Design, Project Manager and 3D environment art' },
+  'at.team.role.miguel':    { es: 'Artista técnico, programador líder y arte 3D de personajes', en: 'Technical artist, lead programmer and 3D character art' },
+  'at.team.role.mariano':   { es: 'Programación, audio manager e implementación de UI', en: 'Programming, audio manager and UI implementation' },
+  'at.team.role.sebastian': { es: 'Arte 3D de objetos y pistas, diseño de audio', en: '3D object and clue art, audio design' },
+  'at.team.role.laurar':    { es: 'Documentación, diseño UI/UX e identidad visual', en: 'Documentation, UI/UX design and visual identity' },
+  'at.challenges.p': { es: 'Uno de mis principales retos fue la gestión del tiempo y de los recursos que el equipo íbamos generando, para mantener un buen flujo de trabajo e integrar todo de forma coherente dentro de los plazos de cada sprint. Para lograrlo, prioricé una comunicación constante con el equipo y una organización clara de los entregables en cada etapa. El otro gran desafío fue diseñar la identidad visual del juego de manera que estuviera acorde con su temática de misterio y lograra transmitir los sentimientos clave que queríamos producir en el jugador. Esta experiencia fortaleció mi capacidad para sostener una dirección de arte coherente bajo presión de tiempo, sin perder de vista la experiencia emocional que buscábamos generar.', en: 'One of my main challenges was managing time and the resources the team kept generating, to maintain a good workflow and integrate everything coherently within each sprint\'s deadlines. To pull it off, I prioritized constant communication with the team and a clear organization of deliverables at every stage. The other big challenge was designing the game\'s visual identity so it matched its mystery theme and conveyed the key feelings we wanted to produce in the player. This experience strengthened my ability to sustain a coherent art direction under time pressure, without losing sight of the emotional experience we were aiming for.' },
+  'at.mywork.desc': { es: 'Identidad visual, UI/UX y documentación del GDD que diseñé para este proyecto.', en: 'Visual identity, UI/UX and GDD documentation I designed for this project.' },
   'tds.challenges.p': { es: 'Mi principal desafío fue desarrollar la interfaz de usuario funcional dentro de Unity. Aunque ya tenía experiencia diseñando interfaces, nunca había implementado una UI completa en Unity con estados de botones, navegación y comportamiento funcional. Para superar este reto investigué la documentación oficial de Unity y me apoyé en diversos tutoriales para comprender las mejores prácticas de implementación. Este proyecto me permitió entender mejor el flujo de trabajo entre diseño e implementación, ampliando mis conocimientos sobre el sistema de UI de Unity.', en: 'My main challenge was building a functional user interface inside Unity. Although I already had experience designing interfaces, I had never implemented a full UI in Unity with button states, navigation, and working behavior. To work through this, I dug into Unity\'s official documentation and leaned on several tutorials to understand implementation best practices. This project helped me better understand the workflow between design and implementation, deepening my knowledge of Unity\'s UI system.' },
 };
 
