@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const el = document.getElementById('typedRole');
   if (!el) return;
 
-  const roles = ['Game Developer', 'Game Designer', 'UI Designer', 'Level Designer'];
+  const roles = ['Game Developer', 'Game Designer', 'UI/UX Designer', 'Multimedia Producer'];
   const cursor = document.querySelector('.typed-cursor');
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
